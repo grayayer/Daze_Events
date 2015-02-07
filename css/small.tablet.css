@@ -1,0 +1,96 @@
+/* CSS for the small tablet devices */
+
+/* Frontpage elements */
+.gk-tweets .gk-tweet {
+	width: 50%!important;
+}
+.gk-nsp-art,
+.gk-nsp-arts,
+.gk-nsp-links {
+	clear: both;
+	width: 100%!important;
+}
+#gk-header-mod h1 {
+	font-size: 40px;
+	margin-bottom: 40px;
+}
+#gk-header-mod h2 {
+	font-size: 20px;
+}
+#gk-header-mod p {
+	font-size: 14px;
+}
+#gk-header-mod > div > div {
+	padding: 60px 0 30px 0;
+}
+.gk-agenda .gk-agenda-tab {
+	padding: 3px 0 0 0px!important;
+}
+.gk-agenda .gk-agenda-nav,
+.gk-agenda .gk-agenda-tabs {
+	width: 100%;
+}
+.gk-agenda .gk-agenda-nav {
+	margin-bottom: 30px;
+}
+.gk-agenda .gk-agenda-nav li {
+	text-align: center;
+	width: 100%;
+}
+.gk-agenda-event-info {
+	padding: 10px;
+}
+.gk-speakers figure {
+	width: 50%!important;
+}
+.gk-speakers figure:nth-child(2n+1) {
+	clear: both;
+}
+.gk-venue > div {
+	padding: 0 40px;
+	width: 60%;
+}
+.gk-venue > dl {
+	width: 40%;
+}
+.gk-event-info h3 {
+	font-size: 15px;
+}
+.archive-page .entry-summary, 
+.archive-page .entry-content, 
+.archive-page .entry-header, 
+.archive-page .entry-meta {
+	width: 100%;
+}
+.gk-3-cols[data-cols="2"] .widget,
+.gk-3-cols[data-cols="3"] .widget {
+	padding: 0 10px;
+	width: 50%;
+}
+.gk-3-cols[data-cols="2"],
+.gk-3-cols[data-cols="3"] {
+	margin: 0 -10px;
+}
+.comment-content-wrapper {
+	margin: 0 0 0 64px;
+}
+.entry-related a {
+	display: inline-block;
+	margin: 0 1%;
+	vertical-align: top;
+	width: 46%;
+}
+.comment-author {
+	margin: 0 0 10px 0;
+	position: static;
+	width: 100%;
+}
+.comment-content-wrapper {
+	margin: 0;
+	padding: 10px 0;
+}
+.comment-metadata > a {
+	float: left;
+	margin: 0 0 10px 0;
+	width: 100%;
+}

@@ -1,0 +1,152 @@
+/* CSS for the tablet devices */
+
+.only-desktop { display: none; }
+.only-tablets { display: block; }
+.only-smartphones { display: none; }
+.only-tablets-and-smartphones { display: block; }
+.only-desktop-and-tablets { display: block; }
+
+#content,
+#sidebar {
+	clear: both;
+	width: 100%!important;
+}
+#sidebar {
+	padding-left: 0!important;
+	padding-right: 0!important;
+}
+#sidebar .widget {
+	float: left;
+	margin: 1% 1%!important;
+	width: 48%!important;
+}
+#sidebar .widget:nth-child(2n+1) {
+	clear: both;
+}
+
+small {
+	font-size: 90%;
+}
+h1 {
+	font-size: 36px;
+}
+h2 {
+	font-size: 28px;	
+}
+h3 {
+	font-size: 24px;
+}
+#site-navigation {
+	display: none;
+}
+#gk-header-nav.static {
+	height: 73px;
+}
+#gk-header.menu-visible {
+	padding-top: 73px;
+}
+#aside-menu-toggler {
+	display: block;	
+}
+
+.gk-cols[data-cols="4"] > div,
+.gk-cols[data-cols="5"] > div { 
+	margin-bottom: 30px;
+	width: 50%; 
+}
+.gk-cols[data-cols="4"] > div:nth-child(2n+1),
+.gk-cols[data-cols="5"] > div:nth-child(2n+1)  {
+	clear: both;
+}
+article header h1, 
+article header h2 {
+	font-size: 32px;
+}
+
+.frontpage-block {
+	padding: 70px 0;
+}
+.frontpage-block.parallax {
+	background-attachment: scroll;
+}
+.frontpage-block.parallax {
+	padding: 50px 0!important;
+}
+
+.gk-tweet {
+	padding: 15px 25px;
+}
+.gk-tweets > div {
+	margin: 0;
+}
+
+#gk-header-mod h1 {
+	font-size: 50px;
+}
+#gk-header-mod p {
+	font-size: 16px;
+	width: 80%;
+}
+
+
+.gk-speakers h3 {
+	font-size: 18px;
+}
+.gk-speakers h3 small {
+	font-size: 13px;
+}
+.gk-agenda .gk-agenda-nav .gk-agenda-text-before, 
+.gk-agenda .gk-agenda-nav .gk-agenda-text-before:hover {
+	font-size: 20px;
+}
+.bigtitle .widget-title,
+.frontpage-block-wrap > h3 {
+	font-size: 40px;
+}
+.gk-subtitle {
+	font-size: 15px;
+	margin: 15px 0 20px 0;
+}
+
+
+.gk-event-info > div > a {
+	max-width: 40%;
+}
+.gk-event-info > div > div {
+	padding: 9px;
+}
+.gk-agenda .gk-event-info h3 {
+	font-size: 13px;
+}
+.gk-event-info small {
+	font-size: 10px;
+	margin-top: 4px;
+}
+.gk-event-info small > i {
+	display: none;
+}
+.gk-agenda .gk-agenda-tab {
+	padding: 3px 0 0 30px!important;
+}
+.agenda-listing .day-content p {
+	font-size: 12px;
+}
+.agenda-listing .agenda-item small {
+	font-size: 13px;
+}
+.post-meta,
+.entry-meta {
+	font-size: 13px;
+}
+
+@media (max-width: 782px) {
+	.admin-bar #gk-header-nav.static {
+		top: 46px;
+	}
+	#aside-menu-toggler {
+		top: 21px;
+	}
+	html #wpadminbar {
+		z-index: 50000!important;
+	}
+}

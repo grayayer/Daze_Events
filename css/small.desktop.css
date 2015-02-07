@@ -1,0 +1,35 @@
+/* CSS for the small desktop devices */
+
+#page,
+.frontpage-block {
+	padding-left: 10px!important;
+	padding-right: 10px!important;
+}
+#gk-header-nav.active #gk-logo, 
+#gk-header-nav.active #gk-logo-css,
+#gk-header-nav.active #gk-logo-css-big {
+	margin-left: 0px;
+}
+#site-navigation {
+	margin-right: 10px;
+}
+#gk-top1,
+#gk-top2 {
+	margin: 0 -10px!important;
+}
+.gk-agenda .gk-agenda-nav {
+	padding: 0;
+}
+.gk-agenda .gk-agenda-nav .gk-agenda-text-before, 
+.gk-agenda .gk-agenda-nav .gk-agenda-text-before:hover {
+	font-size: 24px;
+}
+.gk-agenda-event-info > div > div {
+	padding: 12px 12px 0 12px;
+}
+.gk-agenda .gk-agenda-event-info h3 {
+	font-size: 14px;
+}
+.gk-agenda-event-info small {
+	font-size: 13px;
+}
