@@ -90,6 +90,56 @@ get_header(); ?>
 						</div><!-- .entry-content -->
 						
 						<footer class="entry-meta">
+
+							<!-- EVENT META DATA -->
+							<div class="artist_sidebar event">
+							<h3>Show Info</H3>
+							<?php
+								// get the post custom fields
+								if ($keys = get_post_custom_keys()) {
+									// variable for the list items
+									$output = '';
+									// generate the list
+									foreach ((array) $keys as $key) {
+										// trim the key name
+										$key = trim($key);
+										// filter the hours
+										if($key !== 'event-hours') {
+											// check only the speaker values
+											if(substr($key, 0, 6) == 'event-') {
+												$values = array_map('trim', get_post_custom_values($key));
+												// extract the value
+												$value = implode($values,', ');
+												// change the custom fields keys to readable ones
+												$key_name = explode('-', str_replace('event-', '', $key));
+												// hide the button code label
+												if($key_name[0] !== 'btn') {
+													$key_name = array_map('ucfirst', $key_name);
+													$key_name = join(' ', $key_name);
+												} else {
+													$key_name = '';
+												}
+												// generate the item
+												$output .= apply_filters('the_meta_key', (($key_name != '') ? '<dt>'.$key_name.':</dt>' : '')."\n".'<dd>'.$value.'</dd>'."\n", $key, $value);
+											}
+										}
+									}
+									// output the list
+									if($output !== '') {
+										echo '<dl class="extra-fields">' . "\n";
+										echo $output;
+										echo '</dl>' . "\n";
+									}
+								}
+							?>
+							</div>
+
+
+
+							<!-- ARTIST META DATA -->
+							<div class="artist_sidebar artist">
+							<h3>Artist Info</H3>
+
 							<?php
 								// get the post custom fields
 								if ($keys = get_post_custom_keys()) {
@@ -120,6 +170,7 @@ get_header(); ?>
 									}
 								}
 							?>
+							</div>
 							
 							<?php edit_post_link( __( 'Edit', 'events' ), '<span class="edit-link">', '</span>' ); ?>
 						</footer><!-- .entry-meta -->

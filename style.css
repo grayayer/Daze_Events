@@ -4041,3 +4041,17 @@ a.readon.btn:hover {
 	border-bottom: 4px solid #0F1725;
 }
 
+.artist_sidebar {
+	border: 1px solid #999;
+	padding: 10px 15px;
+	margin-bottom: 1rem;
+	background: #ccc;
+}
+
+.artist_sidebar a {
+	color: #fff;
+}
+
+/*.artist_sidebar h3 {
+	padding-top: 2em;
+}*/
