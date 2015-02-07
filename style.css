@@ -4009,3 +4009,35 @@ body #key {
  * mobile.css
  *
  */
+
+
+ /*** GRAY'S CUSTOM ADDITIONS ***/
+
+.homepage_news h3.gk-nsp-header {
+	font-size: 25px;
+	padding-bottom: 10px;
+	text-align: left;
+}
+
+.gk-nsp-art.gk-nsp-cols-3 {
+	padding-left: 20px !important;
+	box-sizing: border-box;
+}
+
+.gk-nsp-art.gk-nsp-cols-3:first-child {
+	padding-left: 0 !important;
+}
+
+
+.homepage_news .gk-nsp-info a {
+	display: none;
+}
+
+a.readon.btn {
+	border-bottom: 4px solid #949d2f;
+}
+
+a.readon.btn:hover {
+	border-bottom: 4px solid #0F1725;
+}
+
