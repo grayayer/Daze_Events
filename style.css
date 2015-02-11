@@ -4041,6 +4041,9 @@ a.readon.btn:hover {
 	border-bottom: 4px solid #0F1725;
 }
 
+/* Event & ARTIST SIDEBAR STYLING**/
+
+
 .artist_sidebar {
 	border: 1px solid #999;
 	padding: 10px 15px;
@@ -4055,6 +4058,14 @@ a.readon.btn:hover {
 /*.artist_sidebar h3 {
 	padding-top: 2em;
 }*/
+
+.extra-fields dt {
+clear: both;
+}
+
+.extra-fields dd button {
+	margin-bottom: 1rem;
+}
 
 .home .nav-menu .current-menu-item a {
 	color: #2d2d2d;
