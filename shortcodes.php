@@ -39,7 +39,7 @@ if(!function_exists('events_speakers')) {
 		     	<div class="gk-speakers" data-cols="<?php echo $atts['cols']; ?>">
 		     	<?php while ( $loop_global->have_posts() ) : $loop_global->the_post(); ?>
 		     		<?php if(get_post_thumbnail_id() !== '') : ?>
-		     		<figure data-scroll-reveal="enter bottom and move 50px after <?php echo $iter++ * 0.15; ?>s">
+		     		<figure data-scroll-reveal="enter bottom and move 50px after <?php echo $iter++ * 0.035; ?>s">
 		     			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 		     				<img src="<?php echo wp_get_attachment_thumb_url(get_post_thumbnail_id()); ?>" alt="<?php the_title(); ?>">
 		     			</a>
