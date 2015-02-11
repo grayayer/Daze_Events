@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Speaker
+Template Name: Single Speaker Page
 */
 
 get_header(); ?>
@@ -78,8 +78,8 @@ get_header(); ?>
 						
 						<aside class="post-meta">
 							<?php if ( has_post_thumbnail() && !post_password_required() ) : ?>			
-							<div class="entry-thumbnail">
-								<?php the_post_thumbnail(); ?>
+							<div class="entry-thumbnail artist-thumbnail">
+								<?php the_post_thumbnail( 'thumbnail' ); ?>
 							</div>
 							<?php endif; ?>
 						</aside>
