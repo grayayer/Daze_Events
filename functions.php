@@ -153,7 +153,7 @@ function events_scripts() {
 	// Loads JavaScript file with Modernizr
 	wp_enqueue_script( 'events-modernizr', get_template_directory_uri() . '/js/modernizr.js', array(), '', true );
 
-	// Loads JavaScript file with functionality specific to Events.
+	// Loads JavaScript file with functionality specific to Events, and to smooth scrolling.
 	wp_enqueue_script( 'events-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '', true );
 	
 	// Loads JavaScript file for responsive video.

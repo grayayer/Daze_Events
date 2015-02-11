@@ -4055,3 +4055,12 @@ a.readon.btn:hover {
 /*.artist_sidebar h3 {
 	padding-top: 2em;
 }*/
+
+.home .nav-menu .current-menu-item a {
+	color: #2d2d2d;
+}
+
+.home .nav-menu .current-menu-item a:hover {
+	color: #610078;
+}
+
