@@ -5,12 +5,12 @@ div#venues.frontpage-block {
 	h3 {
 		display: none;
 		&.venue_title_overlay {
-		display: block;
-		position: absolute;
-		top: 2rem;
-		left: 0;
-		width: 100%;
-		height: 40px;
+			display: block !important;
+			position: absolute;
+			top: 2rem;
+			left: 0;
+			width: 100%;
+			height: 40px;
 		}
 	}
 

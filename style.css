@@ -4537,7 +4537,7 @@ div#venues.frontpage-block h3 {
   display: none;
 }
 div#venues.frontpage-block h3.venue_title_overlay {
-  display: block;
+  display: block !important;
   position: absolute;
   top: 2rem;
   left: 0;
