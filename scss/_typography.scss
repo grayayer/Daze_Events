@@ -1,0 +1,14 @@
+body {
+
+	a {
+		color: darken(saturate($primary, 40%), 20%);
+	}
+
+	a.readon.btn, button, .readon, input[type="submit"], input[type="button"], input[type="reset"] {
+		border-bottom: 4px solid darken($primary, 20%);
+	}
+
+	a.readon.btn:hover {
+		border-bottom: 4px solid darken($primary, 40%);
+	}
+}

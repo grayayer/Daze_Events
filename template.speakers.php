@@ -57,7 +57,6 @@ get_header(); ?>
 								<div class="entry-thumbnail">
 									<a href="<?php the_permalink(); ?>">
 									<?php the_post_thumbnail( 'thumbnail' ); ?>
-									something's wrong
 									</a>
 								</div>
 								<?php endif; ?>

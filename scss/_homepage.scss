@@ -1,0 +1,16 @@
+
+div#venues.frontpage-block .frontpage-block-wrap {
+	max-width: 100%;
+}
+
+#mapsengine-box-outer {overflow: hidden;}
+#mapsengine-box-inner {
+    overflow: hidden;
+    //height:500px;
+	position: relative;
+	top: -40px;
+}
+
+#mapsengine {
+	margin: -30px 0 0 -350px;
+}
