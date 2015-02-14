@@ -16,5 +16,21 @@ body {
 		font-family: 'interstate';
  		font-weight: 400;
 	}
+
+	i { //ensure that this is used for icons, rather than italics
+		font-style: normal;
+	}
 }
 
+[class^="fa-"]:before,
+[class*=" fa-"]:before {
+	font-family: "FontAwesome" !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

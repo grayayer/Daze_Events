@@ -5328,11 +5328,22 @@ div#venues.frontpage-block .frontpage-block-wrap {
 }
 
 /***** SHOWS SECTION *******/
-/* line 59, _homepage.scss */
+/* line 60, _homepage.scss */
 .gk-agenda-event-info h3 {
   font-size: 20px;
   font-family: 'interstate', 'interstate condensed';
   font-weight: 100;
+  margin-bottom: 8px;
+}
+/* line 66, _homepage.scss */
+.gk-agenda-event-info > div > div {
+  padding: 12px 22px 0 22px;
+}
+/* line 69, _homepage.scss */
+.gk-agenda-event-info small {
+  color: #fff;
+  font-size: 14px;
+  margin: 4px 0px 0 0;
 }
 
 /* line 3, _typography.scss */
@@ -5351,4 +5362,22 @@ body a.readon.btn:hover {
 body .nav-menu > li > a, body .nav-menu > ul > li > a {
   font-family: 'interstate';
   font-weight: 400;
+}
+/* line 20, _typography.scss */
+body i {
+  font-style: normal;
+}
+
+/* line 25, _typography.scss */
+[class^="fa-"]:before,
+[class*=" fa-"]:before {
+  font-family: "FontAwesome" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
