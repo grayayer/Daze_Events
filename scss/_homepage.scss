@@ -1,3 +1,6 @@
+h3.frontpage_block_title {
+	font-weight: 800;
+}
 
 div#venues.frontpage-block {
 	padding-top: 0 !important;
@@ -30,4 +33,31 @@ div#venues.frontpage-block {
 
 #mapsengine {
 	margin: -30px 0 0 -350px;
+}
+
+/*** SPEAKERS SECTION ***/
+
+.gk-speakers h3 {
+	font-size: 32px;
+	line-height: 1.2;
+	font-family: 'interstate condensed';
+	font-weight: 800;
+	small {
+		font-family: 'interstate condensed';
+		font-weight: 400;
+		font-weight: normal;
+	}
+}
+
+.gk-speakers > figure > a, .speakers-listing .entry-thumbnail a {
+	margin: 0 auto 10px auto;
+}
+
+
+/***** SHOWS SECTION *******/
+
+.gk-agenda-event-info h3 {
+	font-size: 20px;
+	font-family: 'interstate', 'interstate condensed';
+	font-weight: 100;
 }

@@ -11,4 +11,10 @@ body {
 	a.readon.btn:hover {
 		border-bottom: 4px solid darken($primary, 40%);
 	}
+
+	.nav-menu > li > a, .nav-menu > ul > li > a {
+		font-family: 'interstate';
+ 		font-weight: 400;
+	}
 }
+

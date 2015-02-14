@@ -10,6 +10,11 @@ Author URI: http://www.gavick.com
 Tags: red, blue, white, two-columns, fluid-layout, responsive-layout, custom-background, custom-colors, custom-menu, editor-style, featured-images, post-formats, sticky-post, threaded-comments, translation-ready
 */
 
+@import "webfonts";
+@import "variables";
+
+
+
 /* 1. Basic Elements
 	1.1 Fonts
 	1.2 Basic stuff
@@ -40,6 +45,8 @@ Tags: red, blue, white, two-columns, fluid-layout, responsive-layout, custom-bac
 7. Multi-site improvements
 8. RWD
 ----------------------------------*/
+
+
 
 /*---------------------------------
 1. Basic elements
@@ -96,6 +103,7 @@ h6 {
 	line-height: 1.2;
 	margin: 0;
 	padding: 0;
+	font-family: $header_font;
 }
 h1 {
 	font-size: 40px;
