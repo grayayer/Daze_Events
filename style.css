@@ -5367,8 +5367,23 @@ body .nav-menu > li > a, body .nav-menu > ul > li > a {
 body i {
   font-style: normal;
 }
+/* line 24, _typography.scss */
+body h3.gk-nsp-header {
+  font-family: interstate;
+  font-weight: 600;
+  padding-top: 3px;
+}
+/* line 30, _typography.scss */
+body h2.entry-title {
+  font-size: 4rem;
+}
+/* line 32, _typography.scss */
+body h2.entry-title small {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
 
-/* line 25, _typography.scss */
+/* line 40, _typography.scss */
 [class^="fa-"]:before,
 [class*=" fa-"]:before {
   font-family: "FontAwesome" !important;
@@ -5380,4 +5395,49 @@ body i {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 3, _event-page.scss */
+article.event-page .entry-social-sharing {
+  margin: 0;
+  padding-top: 0;
+}
+/* line 7, _event-page.scss */
+article.event-page .entry-social-sharing > div {
+  display: block;
+  margin: 2rem 0;
+}
+/* line 10, _event-page.scss */
+article.event-page .entry-social-sharing > div:first-of-type {
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 640px) {
+  /* line 2, _mobile.scss */
+  .entry-social-sharing {
+    display: none !important;
+  }
+
+  /* line 5, _mobile.scss */
+  .speaker-page .entry-thumbnail {
+    margin: 0 auto;
+  }
+
+  /* line 9, _mobile.scss */
+  article h2.entry-title {
+    font-size: 3rem !important;
+  }
+  /* line 11, _mobile.scss */
+  article h2.entry-title small {
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+
+  /* line 17, _mobile.scss */
+  .speaker-page .entry-meta,
+  .sponsor-page .entry-meta,
+  .listing-item .entry-meta {
+    display: block;
+    width: 100%;
+  }
 }

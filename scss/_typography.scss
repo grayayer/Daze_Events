@@ -20,6 +20,21 @@ body {
 	i { //ensure that this is used for icons, rather than italics
 		font-style: normal;
 	}
+
+	h3.gk-nsp-header {
+		font-family: interstate;
+		font-weight: 600;
+		padding-top: 3px;
+	}
+
+	h2.entry-title {
+		font-size: 4rem;
+		small {
+			font-size: 1.5rem;
+			font-weight: normal;
+		}
+	}
+
 }
 
 [class^="fa-"]:before,
