@@ -5190,6 +5190,55 @@ body #key {
  * mobile.css
  *
  */
+/* line 1, _navigation.scss */
+#gk-header-nav {
+  background: url("images/nav_bg2.jpg") repeat #1e2553;
+}
+/* line 4, _navigation.scss */
+#gk-header-nav #gk-logo.gk-small-logo {
+  height: 70px;
+  line-height: 73px;
+  margin-top: 0;
+  width: 225px;
+}
+/* line 11, _navigation.scss */
+#gk-header-nav.static #gk-logo {
+  top: 11px;
+  margin-left: -113px;
+  transform: scale(1);
+}
+/* line 15, _navigation.scss */
+#gk-header-nav.static #gk-logo:hover {
+  top: 0;
+}
+/* line 19, _navigation.scss */
+#gk-header-nav.static.active #gk-logo {
+  top: 0;
+  transform: scale(0.85);
+}
+/* line 26, _navigation.scss */
+#gk-header-nav .nav-menu li a {
+  color: white;
+}
+/* line 29, _navigation.scss */
+#gk-header-nav .nav-menu li a:hover {
+  color: #61a9c2;
+}
+
+/* line 35, _navigation.scss */
+.home #gk-header-nav .nav-menu .current-menu-item a {
+  color: white;
+}
+/* line 38, _navigation.scss */
+.home #gk-header-nav .nav-menu .current-menu-item a:hover {
+  color: #61a9c2;
+}
+
+/* line 43, _navigation.scss */
+#aside-menu-toggler {
+  color: white;
+}
+
 /*COLORS */
 /*** GRAY'S CUSTOM ADDITIONS ***/
 /* line 5, _child.scss */
@@ -5243,21 +5292,11 @@ body #key {
 }
 
 /* line 52, _child.scss */
-.home .nav-menu .current-menu-item a {
-  color: #2d2d2d;
-}
-
-/* line 56, _child.scss */
-.home .nav-menu .current-menu-item a:hover {
-  color: #610078;
-}
-
-/* line 60, _child.scss */
 div#gk-copyrights p.copyright {
   margin: 2em 0 1em;
 }
 
-/* line 64, _child.scss */
+/* line 56, _child.scss */
 #gk-social {
   margin: 1em 0 1em 0;
 }
@@ -5439,5 +5478,19 @@ article.event-page .entry-social-sharing > div:first-of-type {
   .listing-item .entry-meta {
     display: block;
     width: 100%;
+  }
+
+  /* line 24, _mobile.scss */
+  #gk-header-nav.static.active #gk-logo {
+    top: 0;
+    transform: scale(0.5);
+    height: 53px;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1025px) {
+  /* line 32, _mobile.scss */
+  #gk-header-nav.static #gk-logo {
+    top: 0px;
+    transform: scale(0.8);
   }
 }

@@ -21,4 +21,16 @@
 		width: 100%;
 	}
 
+	#gk-header-nav.static.active #gk-logo {
+		top: 0;
+		transform: scale(0.5);
+		height: 53px;
+	}
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1025px) {
+	#gk-header-nav.static #gk-logo {
+		top: 0px;
+		transform: scale(.8);
+	}
 }
