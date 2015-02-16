@@ -1,3 +1,49 @@
+#gk-header-mod {
+	background-size: cover;
+
+	.homescreen_logo img {
+		margin-top: -210px;
+		position: relative;
+		top: -161px;
+	}
+
+	.homescreen_artists {
+		max-width: 530px;
+	}
+
+	h1, h2, p.gk-desc {
+		color: #faf5a6 !important;
+		}
+
+	 h1 {
+		font-size: 40px;
+		margin-bottom: 12px !important;
+	 }
+
+	h2 {
+		font-size: 31px;
+		text-transform: uppercase;
+		padding-bottom: 1em;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	#gk-header-mod {
+		.homescreen_artists {
+			max-width: 40.5vw;
+		}
+	}
+}
+
+@media only screen and (max-width: 599px) {
+	#gk-header-mod {
+		.homescreen_artists {
+			max-width: 100%;
+		}
+	}
+}
+
+
 h3.frontpage_block_title {
 	font-weight: 800;
 }
@@ -72,5 +118,3 @@ div#venues.frontpage-block {
 		margin: 4px 0px 0 0;
 	}
 }
-
-
