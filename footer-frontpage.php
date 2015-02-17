@@ -9,10 +9,10 @@
 	
 	<?php do_action('events_before_footer'); ?>
 	<footer id="gk-footer" role="contentinfo">
-		<div id="gk-footer-nav">
-			<?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_class' => 'footer-menu' ) ); ?>
+<!-- 		<div id="gk-footer-nav">
+			I<?php  /* wp_nav_menu( array( 'theme_location' => 'footer', 'menu_class' => 'footer-menu' ) ); */ ?>
 		</div>
-		
+ -->		
 		<div id="gk-copyrights">
 			<p class="copyright"><?php echo get_theme_mod('events_copyright_text', '&copy; 2014 GavickPro. All rights reserved.'); ?></p>
 		</div>

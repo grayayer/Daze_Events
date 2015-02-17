@@ -153,7 +153,7 @@ function events_scripts() {
 	// Loads JavaScript file with Modernizr
 	wp_enqueue_script( 'events-modernizr', get_template_directory_uri() . '/js/modernizr.js', array(), '', true );
 
-	// Loads JavaScript file with functionality specific to Events.
+	// Loads JavaScript file with functionality specific to Events, and to smooth scrolling.
 	wp_enqueue_script( 'events-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '', true );
 	
 	// Loads JavaScript file for responsive video.
@@ -554,3 +554,27 @@ add_action('tgmpa_register', 'events_register_required_plugins');
 endif;
 
 // EOF
+
+##################################################################
+
+// enable images in media uploader
+
+##################################################################
+function cc_mime_types( $mimes ){
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+}
+add_filter( 'upload_mimes', 'cc_mime_types' );
+
+##################################################################
+
+// display images on media uploader and feature images
+
+##################################################################
+
+function fix_svg_thumb_display() {
+  echo '<style> td.media-icon img[src$=".svg"], img[src$=".svg"].attachment-post-thumbnail { width: 100% !important; height: auto !important; } </style>';
+}
+add_action('admin_head', 'fix_svg_thumb_display');
+
+#########

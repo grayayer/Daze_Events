@@ -185,38 +185,22 @@ if(!function_exists('events_agenda')) {
 							$loop_events->the_post();
 							
 							// variable for the list items
-							$event_details = '';
+							$event_hours = '';
 							// get the post custom fields
 							if ($keys = get_post_custom_keys()) {
 								// generate the list
 								foreach ((array) $keys as $key) {
 									// trim the key name
 									$key = trim($key);
-									// filter the details
-									if($key === 'event-details') {
-										$event_details = get_post_custom_values($key);
-										break;
-									}
-								}
-							}
-
-							// variable for the list items, the venue
-							$event_venue = '';
-							// get the post custom fields
-							if ($keys = get_post_custom_keys()) {
-								// generate the list
-								foreach ((array) $keys as $key) {
-									// trim the key name
-									$key = trim($key);
-									// filter the venue
-									if($key === 'event-venue') {
-										$event_venue = get_post_custom_values($key);
+									// filter the hours
+									if($key === 'event-hours') {
+										$event_hours = get_post_custom_values($key);
 										break;
 									}
 								}
 							}
 							
-							$item_output .= '<div class="gk-agenda-event-info"'.(($iter_tab == 0) ? ' data-scroll-reveal="enter top and wait '.($iter_tab_item * 0.25).'s"' : '').'><div>';
+							$item_output .= '<div class="gk-agenda-event-info agenda_fancy_view"'.(($iter_tab == 0) ? ' data-scroll-reveal="enter top and wait '.($iter_tab_item * 0.25).'s"' : '').'><div>';
 							
 							if(has_post_thumbnail()) {
 								$item_output .= '<a href="'.get_the_permalink().'" class="gk-agenda-image">'.get_the_post_thumbnail(get_the_ID(), 'thumbnail').'</a>';
@@ -225,15 +209,14 @@ if(!function_exists('events_agenda')) {
 							$item_output .= '<div>';
 							$item_output .= '<h3><a href="'.get_the_permalink().'">'.get_the_title().'</a></h3>';
 							
-							if(trim($event_details[0]) !== '') {
-								$item_output .= '<small>'.$event_details[0].'</small>';
+							if(trim($event_hours[0]) !== '') {
+								$item_output .= '<small><i class="gk-icon-clock"></i>'.$event_hours[0].'</small>';
 							}
 
-							if(trim($event_venue[0]) !== '') {
-								$item_output .= '<small>'.$event_venue[0].'</small>';
-							}
+							echo get_post_meta($post->ID, 'event-details', true);
+							echo get_post_meta($post->ID, 'event-venue', true);
 							
-							
+
 							$item_output .= '</div>';
 							$item_output .= '</div></div>';
 							$iter_tab_item++;

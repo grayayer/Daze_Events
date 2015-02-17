@@ -35,6 +35,17 @@ get_header(); ?>
 								<?php if(!is_single()) : ?></a><?php endif; ?>
 							</h<?php echo is_single() ? '1' : '2'; ?>>
 							
+						</header><!-- .entry-header -->
+						
+						<aside class="post-meta">
+							<?php /* echo '<span>' . get_post_meta(get_the_ID(), 'event-hours', true) . '</span>'; */ ?>
+							
+							<?php /*
+								if(!empty( $post->post_parent )) {
+									echo '<a href="'.get_the_permalink($post->post_parent).'" class="inverse">' . get_the_title($post->post_parent) . '</a>';
+								}
+								*/
+							?>
 							<?php if(is_singular() && get_theme_mod('events_event_page_social_icons', '') == '1') : ?>
 							<div class="entry-social-sharing">
 								<div class="entry-twitter-button">
@@ -73,17 +84,7 @@ get_header(); ?>
 									</script> 
 								</div>
 							</div>
-							<?php endif; ?>
-						</header><!-- .entry-header -->
-						
-						<aside class="post-meta">
-							<?php echo '<span>' . get_post_meta(get_the_ID(), 'event-hours', true) . '</span>'; ?>
-							
-							<?php
-								if(!empty( $post->post_parent )) {
-									echo '<a href="'.get_the_permalink($post->post_parent).'" class="inverse">' . get_the_title($post->post_parent) . '</a>';
-								}
-							?>
+							<?php endif; ?>							
 						</aside>
 	
 						<div class="entry-content">
