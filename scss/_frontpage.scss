@@ -1,5 +1,22 @@
+.home {
+	#gk-header-nav.active {
+		top: 32px;
+		border-bottom: rgba(0,0,0,.25) solid 10px;
+		height: 84px;
+	}
+	h3.frontpage_block_title {
+		color: $pale_yellow !important;
+		text-shadow: 2px 2px 1px #111;
+	}
+
+	.gk-subtitle {
+		color: #FFF;
+	}
+}
+
 #gk-header-mod {
 	background-size: cover;
+	border-bottom: solid rgba(0,0,0,0.5) 20px;
 
 	.homescreen_logo img {
 		margin-top: -210px;
@@ -13,6 +30,7 @@
 
 	h1, h2, p.gk-desc {
 		color: $pale_yellow !important;
+		text-shadow: 2px 2px 1px #111;
 		}
 
 	 h1 {
@@ -83,16 +101,30 @@ div#venues.frontpage-block {
 
 /*** SPEAKERS/artists SECTION ***/
 
-.gk-speakers h3 {
-	font-size: 32px;
-	line-height: 1.2;
-	font-family: 'interstate condensed';
-	font-weight: 800;
-	small {
+.gk-speakers {
+	h3 {
+		font-size: 32px;
+		line-height: 1.2;
 		font-family: 'interstate condensed';
-		font-weight: 400;
-		font-weight: normal;
+		font-weight: 800;
+		small {
+			font-family: Ubuntu, arial, helvetica, sans-serif;
+			font-weight: 400;
+			font-weight: normal;
+			color: #FFF;
+		}
 	}
+	a:hover:after {
+		text-shadow:none;
+	}
+	figure > a {
+		box-shadow: 2px 2px 1px rgba(0,0,0,.2);
+
+	}
+}
+
+.gk-speakers img, .speakers-listing .entry-thumbnail img {
+	border: solid rgba(250, 245, 166, 0.25) 4px;
 }
 
 .gk-speakers > figure > a, .speakers-listing .entry-thumbnail a {
@@ -103,6 +135,7 @@ div#venues.frontpage-block {
 	background: url('images/bg_texture2.jpg') no-repeat center center;
 	background-size: cover;
 	background-attachment: fixed;
+	padding: 7em 0 !important;
 		a {
 		color: $pale_yellow;
 		text-shadow: 2px 2px 1px #111;
@@ -137,5 +170,17 @@ div#artists.frontpage-block {
 		color: #fff;
 		font-size: 14px;
 		margin: 4px 0px 0 0;
+	}
+}
+/* PARTNERS */
+.partner_logos {
+	margin: 2em auto 0;
+	display: table;
+	img {
+		max-width: 200px;
+		margin: 0 20px;
+		&:hover {
+			opacity:.9;
+		}
 	}
 }
