@@ -9,8 +9,10 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(is_single() ? 'single-page' : 'archive-page'); ?>>
 	<?php get_template_part( 'content', 'header'); ?>
+
 	<?php if(is_single()) : ?>
-		<?php get_template_part( 'content', 'meta' ); ?>
+		<?php /* get_template_part( 'content', 'meta' ); */ ?>
+		<aside class="post-meta"></aside>
 	<?php endif; ?>
 
 	<?php if ( is_home() || is_search() || is_archive() || is_tag()) : // Only display Excerpts for Search ?>
@@ -35,6 +37,6 @@
 	<?php endif; ?>
 	
 	<?php if(is_single()) : ?>
-		<?php get_template_part( 'author', 'bio' ); ?>
+		<?php /* get_template_part( 'author', 'bio' ); */ ?>
 	<?php endif; ?>
 </article><!-- #post -->

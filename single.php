@@ -6,7 +6,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+		<div id="content" class="site-content single-news" role="main">
 			<?php if (is_active_sidebar('content_top')) : ?>
 			<?php do_action('events_before_content_top'); ?>
 			<div id="content-top" role="complementary">
@@ -16,6 +16,7 @@ get_header(); ?>
 			<?php endif; ?>
 			
 			<?php do_action('events_before_content'); ?>
+			
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php get_template_part( 'content', get_post_format() ); ?>
 				<?php comments_template(); ?>

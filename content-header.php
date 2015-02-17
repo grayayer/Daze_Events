@@ -22,24 +22,25 @@
 	
 	<?php if(is_single()) : ?>
 	<small>
+		<!-- subtitle area goes here -->
 		<?php
-			// Post author	
-			if ( 'post' == get_post_type() ) {
-				echo '<span>' . __( 'Written by ', 'events' ) . '</span>';
-				printf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
-					esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-					esc_attr( sprintf( __( 'View all posts by %s', 'events' ), get_the_author() ) ),
-					get_the_author()
-				);
-			}
-		?>
-		
-		<?php 
-			// Translators: used between list items, there is a space after the comma.
-			$categories_list = get_the_category_list( __( ', ', 'events' ) );
-			if ( $categories_list ) {
-				echo __('Published in ', 'events');
-				echo '<span class="categories-links">' . $categories_list . '</span>';
+			if ('post' == get_post_type() ) {
+				$date_format = esc_html(get_the_date('D j M, Y')); 
+				
+				if(get_theme_mod('events_date_format', 'default') == 'wordpress') {
+					$date_format = get_the_date(get_option('date_format'));
+				} 
+				
+				// Post Formats
+				$post_format = '';
+				
+				if(get_post_format() != '') {
+					$post_format = '<span class="format gk-format-'. get_post_format(). '"></span>';
+				}
+				
+				$date = sprintf( '<time class="entry-date" datetime="'. esc_attr(get_the_date('c')) . '">'. $date_format . $post_format .'</time>' );
+			
+				echo $date;
 			}
 		?>
 	</small>
@@ -60,7 +61,7 @@
 			}
 		?>
 		
-		<?php
+		<?php /*
 			// Post author	
 			if ( 'post' == get_post_type() ) {
 				echo '<span>' . __( 'Written by ', 'events' ) . '</span>';
@@ -69,7 +70,7 @@
 					esc_attr( sprintf( __( 'View all posts by %s', 'events' ), get_the_author() ) ),
 					get_the_author()
 				);
-			}
+			} */
 		?>
 	</p>
 	<?php endif; ?>
