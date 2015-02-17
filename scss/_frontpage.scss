@@ -12,7 +12,7 @@
 	}
 
 	h1, h2, p.gk-desc {
-		color: #faf5a6 !important;
+		color: $pale_yellow !important;
 		}
 
 	 h1 {
@@ -81,7 +81,7 @@ div#venues.frontpage-block {
 	margin: -30px 0 0 -350px;
 }
 
-/*** SPEAKERS SECTION ***/
+/*** SPEAKERS/artists SECTION ***/
 
 .gk-speakers h3 {
 	font-size: 32px;
@@ -99,6 +99,27 @@ div#venues.frontpage-block {
 	margin: 0 auto 10px auto;
 }
 
+.frontpage-block {
+	background: url('images/bg_texture2.jpg') no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+		a {
+		color: $pale_yellow;
+		text-shadow: 2px 2px 1px #111;
+	}
+}
+
+
+div#artists.frontpage-block {
+/*	background: url('images/bg_texture2.jpg') no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;*/
+
+	a {
+		color: $pale_yellow;
+		text-shadow: 2px 2px 1px #111;
+	}
+}
 
 /***** SHOWS SECTION *******/
 
