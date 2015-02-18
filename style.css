@@ -7621,44 +7621,56 @@ body.home .gk-subtitle {
   background-size: cover;
   background-attachment: fixed;
   padding: 4em 0 !important;
+  /*	&:after {
+  		content: "\f006 \0020 \f006 \0020 \f006";
+  		font-family: 'FontAwesome';
+  		text-align: center;
+  		height: 30px;
+  		color: $primary;
+  		opacity: .5;
+  		margin: 0 auto;
+  		display: block;
+  		font-size: 2em;
+  		clear: both;
+  	}*/
   /****** ############### REMOVE AFTER DEBUGGGING ############*/
 }
-/* line 24, _frontpage.scss */
+/* line 25, _frontpage.scss */
 .frontpage-block a {
   color: #faf5a6;
   text-shadow: 2px 2px 1px #111;
 }
-/* line 31, _frontpage.scss */
+/* line 45, _frontpage.scss */
 .frontpage-block b {
   color: red;
 }
 
-/* line 37, _frontpage.scss */
+/* line 51, _frontpage.scss */
 #gk-header-mod {
   background-size: cover;
   border-bottom: solid rgba(0, 0, 0, 0.5) 20px;
 }
-/* line 41, _frontpage.scss */
+/* line 55, _frontpage.scss */
 #gk-header-mod .homescreen_logo img {
   margin-top: -210px;
   position: relative;
   top: -161px;
 }
-/* line 47, _frontpage.scss */
+/* line 61, _frontpage.scss */
 #gk-header-mod .homescreen_artists {
   max-width: 530px;
 }
-/* line 51, _frontpage.scss */
+/* line 65, _frontpage.scss */
 #gk-header-mod h1, #gk-header-mod h2, #gk-header-mod p.gk-desc {
   color: #faf5a6 !important;
   text-shadow: 2px 2px 1px #111;
 }
-/* line 56, _frontpage.scss */
+/* line 70, _frontpage.scss */
 #gk-header-mod h1 {
   font-size: 40px;
   margin-bottom: 12px !important;
 }
-/* line 61, _frontpage.scss */
+/* line 75, _frontpage.scss */
 #gk-header-mod h2 {
   font-size: 31px;
   text-transform: uppercase;
@@ -7666,42 +7678,42 @@ body.home .gk-subtitle {
 }
 
 @media only screen and (min-width: 1024px) {
-  /* line 70, _frontpage.scss */
+  /* line 84, _frontpage.scss */
   #gk-header-mod .homescreen_artists {
     max-width: 40.5vw;
   }
 }
 @media only screen and (max-width: 599px) {
-  /* line 78, _frontpage.scss */
+  /* line 92, _frontpage.scss */
   #gk-header-mod .homescreen_artists {
     max-width: 100%;
   }
 }
-/* line 85, _frontpage.scss */
+/* line 99, _frontpage.scss */
 h3.frontpage_block_title {
   font-weight: 800;
 }
 
 /******** NEWS **********/
-/* line 92, _frontpage.scss */
+/* line 106, _frontpage.scss */
 .homepage_news h3.gk-nsp-header a {
   color: #faf5a6;
 }
-/* line 94, _frontpage.scss */
+/* line 108, _frontpage.scss */
 .homepage_news h3.gk-nsp-header a:hover {
   color: #b2e1f1;
 }
-/* line 98, _frontpage.scss */
+/* line 112, _frontpage.scss */
 .homepage_news .gk-nsp-info, .homepage_news .gk-nsp-text {
   color: #FFF;
 }
-/* line 101, _frontpage.scss */
+/* line 115, _frontpage.scss */
 .homepage_news a.readon.btn {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 /***** VENUES SECTION ***/
-/* line 109, _frontpage.scss */
+/* line 123, _frontpage.scss */
 div#venues.frontpage-block img {
   max-height: 100px;
   width: auto;
@@ -7744,80 +7756,80 @@ div#venues.frontpage-block img {
 }
 */
 /*** SPEAKERS/artists SECTION ***/
-/* line 155, _frontpage.scss */
+/* line 169, _frontpage.scss */
 .gk-speakers h3 {
   font-size: 32px;
   line-height: 1.2;
   font-family: 'interstate condensed';
   font-weight: 800;
 }
-/* line 160, _frontpage.scss */
+/* line 174, _frontpage.scss */
 .gk-speakers h3 small {
   font-family: Ubuntu, arial, helvetica, sans-serif;
   font-weight: 400;
   font-weight: normal;
   color: #FFF;
 }
-/* line 167, _frontpage.scss */
+/* line 181, _frontpage.scss */
 .gk-speakers a:hover:after {
   text-shadow: none;
 }
-/* line 170, _frontpage.scss */
+/* line 184, _frontpage.scss */
 .gk-speakers figure > a {
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-/* line 176, _frontpage.scss */
+/* line 190, _frontpage.scss */
 .gk-speakers img, .speakers-listing .entry-thumbnail img {
   border: solid rgba(250, 245, 166, 0.25) 4px;
 }
 
-/* line 180, _frontpage.scss */
+/* line 194, _frontpage.scss */
 .gk-speakers > figure > a, .speakers-listing .entry-thumbnail a {
   margin: 0 auto 10px auto;
 }
 
-/* line 186, _frontpage.scss */
+/* line 200, _frontpage.scss */
 div#artists.frontpage-block {
   /*	background: url('images/bg_texture2.jpg') no-repeat center center;
   	background-size: cover;
   	background-attachment: fixed;*/
 }
-/* line 191, _frontpage.scss */
+/* line 205, _frontpage.scss */
 div#artists.frontpage-block a {
   color: #faf5a6;
   text-shadow: 2px 2px 1px #111;
 }
-/* line 194, _frontpage.scss */
+/* line 208, _frontpage.scss */
 div#artists.frontpage-block a:hover {
   color: #b2e1f1;
 }
 
-/* line 200, _frontpage.scss */
+/* line 214, _frontpage.scss */
 .gk-speakers > figure > a:after, .speakers-listing .entry-thumbnail a:after {
   content: "\f00e";
   font-family: 'FontAwesome';
 }
 
 /***** SHOWS SECTION *******/
-/* line 208, _frontpage.scss */
+/* line 222, _frontpage.scss */
 .gk-agenda-event-info h3 {
   font-size: 20px;
   font-family: 'interstate', 'interstate condensed';
   font-weight: 100;
   margin-bottom: 8px;
 }
-/* line 214, _frontpage.scss */
+/* line 228, _frontpage.scss */
 .gk-agenda-event-info h3 a:active,
 .gk-agenda-event-info h3 a:focus,
 .gk-agenda-event-info h3 a:hover {
   color: #61a9c2;
 }
-/* line 222, _frontpage.scss */
+/* line 236, _frontpage.scss */
 .gk-agenda-event-info > div > div {
   padding: 12px 22px 0 22px;
 }
-/* line 225, _frontpage.scss */
+/* line 239, _frontpage.scss */
 .gk-agenda-event-info small {
   color: #fff;
   font-size: 14px;
@@ -7825,19 +7837,19 @@ div#artists.frontpage-block a:hover {
 }
 
 /* PARTNERS */
-/* line 232, _frontpage.scss */
+/* line 246, _frontpage.scss */
 .partner_logos {
   margin: 2em auto 0;
   display: table;
 }
-/* line 235, _frontpage.scss */
+/* line 249, _frontpage.scss */
 .partner_logos img {
   /*max-width: 200px;
   margin: 0 20px;*/
   margin: 0 auto;
   display: block;
 }
-/* line 240, _frontpage.scss */
+/* line 254, _frontpage.scss */
 .partner_logos img:hover {
   opacity: .9;
 }
@@ -8031,21 +8043,21 @@ article.event-page .entry-social-sharing > div:first-of-type {
     width: 100%;
   }
 
-  /* line 66, _mobile.scss */
-  #gk-header-nav.static.active #gk-logo {
+  /* line 67, _mobile.scss */
+  #gk-header-nav #gk-logo, #gk-header-nav .active #gk-logo, #gk-header-nav .static #gk-logo, #gk-header-nav .static.active #gk-logo {
     top: 0;
     transform: scale(0.5);
     height: 53px;
   }
 
-  /* line 72, _mobile.scss */
+  /* line 74, _mobile.scss */
   #gk-footer {
     background-repeat: repeat;
     background-size: initial;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1025px) {
-  /* line 80, _mobile.scss */
+  /* line 82, _mobile.scss */
   #gk-header-nav.static #gk-logo {
     top: 0px;
     transform: scale(0.8);

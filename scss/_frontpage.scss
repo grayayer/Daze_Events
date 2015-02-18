@@ -21,10 +21,24 @@ body.home {
 	background-size: cover;
 	background-attachment: fixed;
 	padding: 4em 0 !important;
-		a {
+	
+	a {
 		color: $pale_yellow;
 		text-shadow: 2px 2px 1px #111;
 	}
+
+/*	&:after {
+		content: "\f006 \0020 \f006 \0020 \f006";
+		font-family: 'FontAwesome';
+		text-align: center;
+		height: 30px;
+		color: $primary;
+		opacity: .5;
+		margin: 0 auto;
+		display: block;
+		font-size: 2em;
+		clear: both;
+	}*/
 
 
 /****** ############### REMOVE AFTER DEBUGGGING ############*/

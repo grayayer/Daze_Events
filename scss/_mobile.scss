@@ -63,10 +63,12 @@
 		width: 100%;
 	}
 
-	#gk-header-nav.static.active #gk-logo {
-		top: 0;
-		transform: scale(0.5);
-		height: 53px;
+	#gk-header-nav {
+		#gk-logo, .active #gk-logo, .static #gk-logo, .static.active #gk-logo {
+			top: 0;
+			transform: scale(0.5);
+			height: 53px;
+		}
 	}
 
 	#gk-footer {
