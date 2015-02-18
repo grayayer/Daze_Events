@@ -1,0 +1,45 @@
+#gk-header-nav {
+	background: url('images/nav_bg2.jpg') repeat #1e2553;
+
+	#gk-logo.gk-small-logo {
+		height: 70px;
+		line-height: 73px;
+		margin-top: 0;
+		width: 225px;
+	}
+	&.static {
+		#gk-logo {
+			top: 11px;
+			margin-left: -113px;
+			transform: scale(1);
+			&:hover {
+				top:0;
+			}
+		}
+		&.active #gk-logo {
+			top: 0;
+			transform: scale(.85);
+
+		}		
+	}
+
+	.nav-menu li a {
+		color: $nav_color;
+
+		&:hover {
+			color: $primary;
+		}
+	}
+}
+
+.home #gk-header-nav .nav-menu .current-menu-item a {
+	color: $nav_color;
+
+	&:hover {
+		color: $primary;
+	}
+}
+
+#aside-menu-toggler {
+	color: $nav_color;
+}

@@ -55,7 +55,8 @@ global $post;
 			<div id="gk-header-mod" style="background-image: url('<?php header_image(); ?>');">
 				<div class="frontpage-block-wrap">
 					<?php do_action('events_before_header'); ?>
-					
+
+<?php /*					
 					<?php if(get_theme_mod('events_logo', '') == '') : ?>
 					<a id="gk-logo-css-big" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 						<span><?php bloginfo( 'name' ); ?></span>
@@ -65,7 +66,7 @@ global $post;
 						<img src="<?php echo get_theme_mod('events_logo', ''); ?>" alt="<?php bloginfo( 'name' ); ?>" />
 					</a>
 					<?php endif; ?>
-					
+*/ ?>					
 					<?php if ( have_posts() ) : ?>
 						<?php while ( have_posts() ) : the_post(); ?>
 							<?php the_content(); ?>

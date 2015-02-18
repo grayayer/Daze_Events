@@ -39,7 +39,7 @@ if(!function_exists('events_speakers')) {
 		     	<div class="gk-speakers" data-cols="<?php echo $atts['cols']; ?>">
 		     	<?php while ( $loop_global->have_posts() ) : $loop_global->the_post(); ?>
 		     		<?php if(get_post_thumbnail_id() !== '') : ?>
-		     		<figure data-scroll-reveal="enter bottom and move 50px after <?php echo $iter++ * 0.15; ?>s">
+		     		<figure data-scroll-reveal="enter bottom and move 50px after <?php echo $iter++ * 0.035; ?>s">
 		     			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 		     				<img src="<?php echo wp_get_attachment_thumb_url(get_post_thumbnail_id()); ?>" alt="<?php the_title(); ?>">
 		     			</a>
@@ -185,16 +185,32 @@ if(!function_exists('events_agenda')) {
 							$loop_events->the_post();
 							
 							// variable for the list items
-							$event_hours = '';
+							$event_details = '';
 							// get the post custom fields
 							if ($keys = get_post_custom_keys()) {
 								// generate the list
 								foreach ((array) $keys as $key) {
 									// trim the key name
 									$key = trim($key);
-									// filter the hours
-									if($key === 'event-hours') {
-										$event_hours = get_post_custom_values($key);
+									// filter the details
+									if($key === 'event-details') {
+										$event_details = get_post_custom_values($key);
+										break;
+									}
+								}
+							}
+
+							// variable for the list items, the venue
+							$event_venue = '';
+							// get the post custom fields
+							if ($keys = get_post_custom_keys()) {
+								// generate the list
+								foreach ((array) $keys as $key) {
+									// trim the key name
+									$key = trim($key);
+									// filter the venue
+									if($key === 'event-venue') {
+										$event_venue = get_post_custom_values($key);
 										break;
 									}
 								}
@@ -209,9 +225,14 @@ if(!function_exists('events_agenda')) {
 							$item_output .= '<div>';
 							$item_output .= '<h3><a href="'.get_the_permalink().'">'.get_the_title().'</a></h3>';
 							
-							if(trim($event_hours[0]) !== '') {
-								$item_output .= '<small><i class="gk-icon-clock"></i>'.$event_hours[0].'</small>';
+							if(trim($event_details[0]) !== '') {
+								$item_output .= '<small>'.$event_details[0].'</small>';
 							}
+
+							if(trim($event_venue[0]) !== '') {
+								$item_output .= '<small>'.$event_venue[0].'</small>';
+							}
+							
 							
 							$item_output .= '</div>';
 							$item_output .= '</div></div>';

@@ -52,11 +52,11 @@ get_header(); ?>
 						
 						?>
 						<article class="listing-item speakers-listing">
-							<aside class="post-meta">
+							<aside class="post-meta artist_thumbnail">
 								<?php if ( has_post_thumbnail() && !post_password_required() ) : ?>			
 								<div class="entry-thumbnail">
 									<a href="<?php the_permalink(); ?>">
-									<?php the_post_thumbnail(); ?>
+									<?php the_post_thumbnail( 'thumbnail' ); ?>
 									</a>
 								</div>
 								<?php endif; ?>

@@ -38,9 +38,9 @@ get_header('frontpage'); ?>
 							$header_class = ' class="widget-title mediumtitle"';
 						}
 					?>
-					<div class="frontpage-block<?php echo $background_color; ?><?php echo $background_image; ?>">
+					<div class="frontpage-block<?php echo $background_color; ?><?php echo $background_image; ?>"  id="<?php echo get_post_meta($post->ID, 'anchor_id', true); ?>">
 						<div class="frontpage-block-wrap">
-							<h3<?php echo $header_class; ?>><?php the_title(); ?></h3>
+							<h3<?php echo $header_class; ?> class="frontpage_block_title"><?php the_title(); ?></h3>
 							
 							<?php the_content(); ?>
 						</div>

@@ -1,0 +1,51 @@
+body {
+
+	a {
+		color: darken(saturate($primary, 40%), 20%);
+	}
+
+	a.readon.btn, button, .readon, input[type="submit"], input[type="button"], input[type="reset"] {
+		border-bottom: 4px solid darken($primary, 20%);
+	}
+
+	a.readon.btn:hover {
+		border-bottom: 4px solid #04070B;
+	}
+
+	.nav-menu > li > a, .nav-menu > ul > li > a {
+		font-family: 'interstate';
+ 		font-weight: 400;
+	}
+
+	i { //ensure that this is used for icons, rather than italics
+		font-style: normal;
+	}
+
+	h3.gk-nsp-header {
+		font-family: interstate;
+		font-weight: 600;
+		padding-top: 3px;
+	}
+
+	h2.entry-title {
+		font-size: 4rem;
+		small {
+			font-size: 1.5rem;
+			font-weight: normal;
+		}
+	}
+
+}
+
+[class^="fa-"]:before,
+[class*=" fa-"]:before {
+	font-family: "FontAwesome" !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

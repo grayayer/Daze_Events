@@ -16,6 +16,7 @@
 	<![endif]-->
 	<?php do_action('events_head'); ?>
 	<?php wp_head(); ?>
+	
 </head>
 <body <?php body_class(get_theme_mod('events_blocks_color', 'events-light-blocks')); ?>>
 	<!--[if lte IE 8]>

@@ -1,0 +1,31 @@
+#gk-footer {
+	background: url('images/bg_texture2.jpg') no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #FFF;
+	a {
+		color: #FFF;
+		&:hover {
+			color: $primary !important;
+		}	
+	}
+
+	div#gk-copyrights {
+	margin: 0 auto;
+		p.copyright {
+			padding: 2em 0 .5em;
+			margin: 0;
+		}
+	}
+
+	#gk-social {
+		padding: .5em 0 1em 0;
+		margin: 0 auto;
+		li {
+			color: #FFF !important;
+			&:hover {
+				color: $primary !important;
+			}
+		}
+	}
+}

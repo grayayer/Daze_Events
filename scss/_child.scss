@@ -1,0 +1,54 @@
+
+
+ /*** GRAY'S CUSTOM ADDITIONS ***/
+
+#gk-bg {
+	background: #FFF url('images/paper.png') repeat fixed;
+}
+
+.homepage_news h3.gk-nsp-header {
+	font-size: 25px;
+	padding-bottom: 10px;
+	text-align: left;
+}
+
+.gk-nsp-art.gk-nsp-cols-3 {
+	padding-left: 20px !important;
+	box-sizing: border-box;
+}
+
+.gk-nsp-art.gk-nsp-cols-3:first-child {
+	padding-left: 0 !important;
+}
+
+
+.homepage_news .gk-nsp-info a {
+	display: none;
+}
+
+
+/* Event & ARTIST SIDEBAR STYLING**/
+
+
+.artist_sidebar {
+	border: 1px solid #999;
+	padding: 10px 15px;
+	margin-bottom: 1rem;
+	background: #ccc;
+}
+
+.artist_sidebar a {
+	color: #fff;
+}
+
+/*.artist_sidebar h3 {
+	padding-top: 2em;
+}*/
+
+.extra-fields dt {
+clear: both;
+}
+
+.extra-fields dd button {
+	margin-bottom: 1rem;
+}

@@ -48,9 +48,9 @@
 		</div>
 		<?php endif; ?>
 		
-		<div id="gk-footer-nav">
-			<?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_class' => 'footer-menu' ) ); ?>
-		</div>
+<!-- 		<div id="gk-footer-nav">
+			<?php // wp_nav_menu( array( 'theme_location' => 'footer', 'menu_class' => 'footer-menu' ) ); ?>
+		</div> -->
 		
 		<div id="gk-copyrights">
 			<p class="copyright"><?php echo get_theme_mod('events_copyright_text', '&copy; 2014 GavickPro. All rights reserved.'); ?></p>
@@ -75,5 +75,7 @@
 	<?php get_template_part('login', 'popup'); ?>
 	
 	<?php wp_footer(); ?>
+
+
 </body>
 </html>
