@@ -8043,21 +8043,32 @@ article.event-page .entry-social-sharing > div:first-of-type {
     width: 100%;
   }
 
+  /* line 66, _mobile.scss */
+  #gk-header-nav {
+    /*interior navigation header*/
+  }
   /* line 67, _mobile.scss */
-  #gk-header-nav #gk-logo, #gk-header-nav.active #gk-logo, #gk-header-nav.static #gk-logo, #gk-header-nav.static.active #gk-logo {
+  #gk-header-nav #gk-logo {
     top: 0;
     transform: scale(0.5);
     height: 53px;
   }
+  /* line 73, _mobile.scss */
+  #gk-header-nav.active #gk-logo, #gk-header-nav.static #gk-logo, #gk-header-nav.static.active #gk-logo {
+    max-height: 40px;
+    width: 125px;
+    left: 0;
+    margin-left: 0;
+  }
 
-  /* line 74, _mobile.scss */
+  /* line 81, _mobile.scss */
   #gk-footer {
     background-repeat: repeat;
     background-size: initial;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1025px) {
-  /* line 82, _mobile.scss */
+  /* line 89, _mobile.scss */
   #gk-header-nav.static #gk-logo {
     top: 0px;
     transform: scale(0.8);
