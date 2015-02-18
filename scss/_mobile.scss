@@ -14,6 +14,12 @@
 		}
 	}
 
+	.frontpage-block {
+		background: url("images/frontpage_bg_mobile.jpg") repeat center center; /*different bg for mobile*/
+		background-size: inherit;
+		background-attachment: fixed;
+	}
+
 	.speaker-page .entry-meta,
 	.sponsor-page .entry-meta,
 	.listing-item .entry-meta {
