@@ -1,20 +1,25 @@
 @media only screen and (max-width: 640px) {
 
-body.home #gk-header-nav.active {
-	top: 0;
-	height: 64px;
+	body.home {
+		#gk-header-nav.active {
+			top: 0;
+			height: 64px;
 
-	#gk-logo, #gk-logo-css, #gk-logo-css-big {
-		top: 0;
-		height: 50px;
-		line-height: 50px;
-			img {
+			#gk-logo, #gk-logo-css, #gk-logo-css-big {
+				top: 0;
 				height: 50px;
-				width: initial;
-			}
-	}
+				line-height: 50px;
 
-}
+				img {
+					height: 50px;
+					width: initial;
+				}
+			}
+		}
+		#gk-footer {
+			border-top: rgba(0, 0, 0, 0.25) solid 10px;
+		}
+	}
 
 	.entry-social-sharing {
 		display: none !important;
@@ -46,6 +51,9 @@ body.home #gk-header-nav.active {
 		background-size: inherit;
 		background-attachment: fixed;
 		padding: 3em 0 !important;
+		> h3 {
+			font-size: 3em;
+		}
 	}
 
 	.speaker-page .entry-meta,
@@ -60,6 +68,11 @@ body.home #gk-header-nav.active {
 		transform: scale(0.5);
 		height: 53px;
 	}
+
+	#gk-footer {
+		background-repeat: repeat;
+	}
+
 }
 
 @media only screen and (min-width: 641px) and (max-width: 1025px) {
