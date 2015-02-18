@@ -210,7 +210,15 @@ div#artists.frontpage-block {
 		font-family: 'interstate', 'interstate condensed';
 		font-weight: 100;
 		margin-bottom: 8px;
+
+		a:active,
+		a:focus,
+		a:hover {
+	  		color: $primary;
+		}
 	}
+
+
 	> div > div {
 		padding: 12px 22px 0 22px;
 	}

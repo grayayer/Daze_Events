@@ -7501,7 +7501,6 @@ select {
 /* line 11, _navigation.scss */
 #gk-header-nav.static #gk-logo {
   top: 11px;
-  margin-left: -113px;
   transform: scale(1);
 }
 /* line 15, _navigation.scss */
@@ -7569,26 +7568,30 @@ select {
 /* Event & ARTIST SIDEBAR STYLING**/
 /* line 33, _child.scss */
 .artist_sidebar {
-  border: 1px solid #999;
-  padding: 10px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 15px 20px;
   margin-bottom: 1rem;
-  background: #ccc;
+  background: rgba(0, 0, 0, 0.04);
 }
 
 /* line 40, _child.scss */
 .artist_sidebar a {
-  color: #fff;
+  color: #4491AC;
+}
+/* line 42, _child.scss */
+.artist_sidebar a:hover {
+  color: #6140a0;
 }
 
 /*.artist_sidebar h3 {
 	padding-top: 2em;
 }*/
-/* line 48, _child.scss */
+/* line 51, _child.scss */
 .extra-fields dt {
   clear: both;
 }
 
-/* line 52, _child.scss */
+/* line 55, _child.scss */
 .extra-fields dd button {
   margin-bottom: 1rem;
 }
@@ -7802,10 +7805,16 @@ div#artists.frontpage-block a:hover {
   margin-bottom: 8px;
 }
 /* line 214, _frontpage.scss */
+.gk-agenda-event-info h3 a:active,
+.gk-agenda-event-info h3 a:focus,
+.gk-agenda-event-info h3 a:hover {
+  color: #61a9c2;
+}
+/* line 222, _frontpage.scss */
 .gk-agenda-event-info > div > div {
   padding: 12px 22px 0 22px;
 }
-/* line 217, _frontpage.scss */
+/* line 225, _frontpage.scss */
 .gk-agenda-event-info small {
   color: #fff;
   font-size: 14px;
@@ -7813,17 +7822,17 @@ div#artists.frontpage-block a:hover {
 }
 
 /* PARTNERS */
-/* line 224, _frontpage.scss */
+/* line 232, _frontpage.scss */
 .partner_logos {
   margin: 2em auto 0;
   display: table;
 }
-/* line 227, _frontpage.scss */
+/* line 235, _frontpage.scss */
 .partner_logos img {
   max-width: 200px;
   margin: 0 20px;
 }
-/* line 230, _frontpage.scss */
+/* line 238, _frontpage.scss */
 .partner_logos img:hover {
   opacity: .9;
 }

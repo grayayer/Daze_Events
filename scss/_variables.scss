@@ -2,5 +2,7 @@
 $header_font: 'interstate condensed';
 $nav_color:#FFFFFF;
 $primary: #61a9c2;
+$primary_darker: darken($primary, 15%);
 $pale_yellow: #faf5a6;
 $anchor_hover: saturate(lighten($primary, 25%), 25%);
+$purple: #6140a0;
