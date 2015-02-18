@@ -8019,7 +8019,7 @@ article.event-page .entry-social-sharing > div:first-of-type {
     padding: 3em 0 !important;
   }
   /* line 54, _mobile.scss */
-  .frontpage-block > h3 {
+  .frontpage-block h3.frontpage_block_title {
     font-size: 3em;
   }
 
@@ -8041,10 +8041,11 @@ article.event-page .entry-social-sharing > div:first-of-type {
   /* line 72, _mobile.scss */
   #gk-footer {
     background-repeat: repeat;
+    background-size: initial;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1025px) {
-  /* line 79, _mobile.scss */
+  /* line 80, _mobile.scss */
   #gk-header-nav.static #gk-logo {
     top: 0px;
     transform: scale(0.8);

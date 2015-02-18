@@ -51,7 +51,7 @@
 		background-size: inherit;
 		background-attachment: fixed;
 		padding: 3em 0 !important;
-		> h3 {
+		h3.frontpage_block_title {
 			font-size: 3em;
 		}
 	}
@@ -71,6 +71,7 @@
 
 	#gk-footer {
 		background-repeat: repeat;
+		background-size: initial;
 	}
 
 }
