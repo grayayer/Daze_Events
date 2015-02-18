@@ -7620,7 +7620,7 @@ body.home .gk-subtitle {
   background: url("images/bg_texture2.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
-  padding: 7em 0 !important;
+  padding: 4em 0 !important;
   /****** ############### REMOVE AFTER DEBUGGGING ############*/
 }
 /* line 24, _frontpage.scss */
@@ -8012,9 +8012,10 @@ article.event-page .entry-social-sharing > div:first-of-type {
     /*different bg for mobile*/
     background-size: inherit;
     background-attachment: fixed;
+    padding: 3em 0 !important;
   }
 
-  /* line 50, _mobile.scss */
+  /* line 51, _mobile.scss */
   .speaker-page .entry-meta,
   .sponsor-page .entry-meta,
   .listing-item .entry-meta {
@@ -8022,7 +8023,7 @@ article.event-page .entry-social-sharing > div:first-of-type {
     width: 100%;
   }
 
-  /* line 57, _mobile.scss */
+  /* line 58, _mobile.scss */
   #gk-header-nav.static.active #gk-logo {
     top: 0;
     transform: scale(0.5);
@@ -8030,7 +8031,7 @@ article.event-page .entry-social-sharing > div:first-of-type {
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1025px) {
-  /* line 65, _mobile.scss */
+  /* line 66, _mobile.scss */
   #gk-header-nav.static #gk-logo {
     top: 0px;
     transform: scale(0.8);
