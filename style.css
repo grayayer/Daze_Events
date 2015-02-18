@@ -7600,24 +7600,29 @@ select {
 }
 
 /* line 3, _frontpage.scss */
+body.home #gk-header-nav {
+  opacity: 0;
+}
+/* line 7, _frontpage.scss */
 body.home #gk-header-nav.active {
   top: 32px;
   top: inherit;
   /*this addresses a bug on windows, but also prevents the super smooth fade in*/
   border-bottom: rgba(0, 0, 0, 0.25) solid 10px;
   height: 84px;
+  opacity: 1;
 }
-/* line 9, _frontpage.scss */
+/* line 14, _frontpage.scss */
 body.home h3.frontpage_block_title {
   color: #faf5a6 !important;
   text-shadow: 2px 2px 1px #111;
 }
-/* line 14, _frontpage.scss */
+/* line 19, _frontpage.scss */
 body.home .gk-subtitle {
   color: #FFF;
 }
 
-/* line 20, _frontpage.scss */
+/* line 25, _frontpage.scss */
 .frontpage-block {
   background: url("images/bg_texture2.jpg") no-repeat center center;
   background-size: cover;
@@ -7637,42 +7642,42 @@ body.home .gk-subtitle {
   	}*/
   /****** ############### REMOVE AFTER DEBUGGGING ############*/
 }
-/* line 26, _frontpage.scss */
+/* line 31, _frontpage.scss */
 .frontpage-block a {
   color: #faf5a6;
   text-shadow: 2px 2px 1px #111;
 }
-/* line 46, _frontpage.scss */
+/* line 51, _frontpage.scss */
 .frontpage-block b {
   color: red;
 }
 
-/* line 52, _frontpage.scss */
+/* line 57, _frontpage.scss */
 #gk-header-mod {
   background-size: cover;
   border-bottom: solid rgba(0, 0, 0, 0.5) 20px;
 }
-/* line 56, _frontpage.scss */
+/* line 61, _frontpage.scss */
 #gk-header-mod .homescreen_logo img {
   margin-top: -210px;
   position: relative;
   top: -161px;
 }
-/* line 62, _frontpage.scss */
+/* line 67, _frontpage.scss */
 #gk-header-mod .homescreen_artists {
   max-width: 530px;
 }
-/* line 66, _frontpage.scss */
+/* line 71, _frontpage.scss */
 #gk-header-mod h1, #gk-header-mod h2, #gk-header-mod p.gk-desc {
   color: #faf5a6 !important;
   text-shadow: 2px 2px 1px #111;
 }
-/* line 71, _frontpage.scss */
+/* line 76, _frontpage.scss */
 #gk-header-mod h1 {
   font-size: 40px;
   margin-bottom: 12px !important;
 }
-/* line 76, _frontpage.scss */
+/* line 81, _frontpage.scss */
 #gk-header-mod h2 {
   font-size: 31px;
   text-transform: uppercase;
@@ -7680,42 +7685,42 @@ body.home .gk-subtitle {
 }
 
 @media only screen and (min-width: 1024px) {
-  /* line 85, _frontpage.scss */
+  /* line 90, _frontpage.scss */
   #gk-header-mod .homescreen_artists {
     max-width: 40.5vw;
   }
 }
 @media only screen and (max-width: 599px) {
-  /* line 93, _frontpage.scss */
+  /* line 98, _frontpage.scss */
   #gk-header-mod .homescreen_artists {
     max-width: 100%;
   }
 }
-/* line 100, _frontpage.scss */
+/* line 105, _frontpage.scss */
 h3.frontpage_block_title {
   font-weight: 800;
 }
 
 /******** NEWS **********/
-/* line 107, _frontpage.scss */
+/* line 112, _frontpage.scss */
 .homepage_news h3.gk-nsp-header a {
   color: #faf5a6;
 }
-/* line 109, _frontpage.scss */
+/* line 114, _frontpage.scss */
 .homepage_news h3.gk-nsp-header a:hover {
   color: #b2e1f1;
 }
-/* line 113, _frontpage.scss */
+/* line 118, _frontpage.scss */
 .homepage_news .gk-nsp-info, .homepage_news .gk-nsp-text {
   color: #FFF;
 }
-/* line 116, _frontpage.scss */
+/* line 121, _frontpage.scss */
 .homepage_news a.readon.btn {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 /***** VENUES SECTION ***/
-/* line 124, _frontpage.scss */
+/* line 129, _frontpage.scss */
 div#venues.frontpage-block img {
   max-height: 100px;
   width: auto;
@@ -7758,80 +7763,80 @@ div#venues.frontpage-block img {
 }
 */
 /*** SPEAKERS/artists SECTION ***/
-/* line 170, _frontpage.scss */
+/* line 175, _frontpage.scss */
 .gk-speakers h3 {
   font-size: 32px;
   line-height: 1.2;
   font-family: 'interstate condensed';
   font-weight: 800;
 }
-/* line 175, _frontpage.scss */
+/* line 180, _frontpage.scss */
 .gk-speakers h3 small {
   font-family: Ubuntu, arial, helvetica, sans-serif;
   font-weight: 400;
   font-weight: normal;
   color: #FFF;
 }
-/* line 182, _frontpage.scss */
+/* line 187, _frontpage.scss */
 .gk-speakers a:hover:after {
   text-shadow: none;
 }
-/* line 185, _frontpage.scss */
+/* line 190, _frontpage.scss */
 .gk-speakers figure > a {
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-/* line 191, _frontpage.scss */
+/* line 196, _frontpage.scss */
 .gk-speakers img, .speakers-listing .entry-thumbnail img {
   border: solid rgba(250, 245, 166, 0.25) 4px;
 }
 
-/* line 195, _frontpage.scss */
+/* line 200, _frontpage.scss */
 .gk-speakers > figure > a, .speakers-listing .entry-thumbnail a {
   margin: 0 auto 10px auto;
 }
 
-/* line 201, _frontpage.scss */
+/* line 206, _frontpage.scss */
 div#artists.frontpage-block {
   /*	background: url('images/bg_texture2.jpg') no-repeat center center;
   	background-size: cover;
   	background-attachment: fixed;*/
 }
-/* line 206, _frontpage.scss */
+/* line 211, _frontpage.scss */
 div#artists.frontpage-block a {
   color: #faf5a6;
   text-shadow: 2px 2px 1px #111;
 }
-/* line 209, _frontpage.scss */
+/* line 214, _frontpage.scss */
 div#artists.frontpage-block a:hover {
   color: #b2e1f1;
 }
 
-/* line 215, _frontpage.scss */
+/* line 220, _frontpage.scss */
 .gk-speakers > figure > a:after, .speakers-listing .entry-thumbnail a:after {
   content: "\f00e";
   font-family: 'FontAwesome';
 }
 
 /***** SHOWS SECTION *******/
-/* line 223, _frontpage.scss */
+/* line 228, _frontpage.scss */
 .gk-agenda-event-info h3 {
   font-size: 20px;
   font-family: 'interstate', 'interstate condensed';
   font-weight: 100;
   margin-bottom: 8px;
 }
-/* line 229, _frontpage.scss */
+/* line 234, _frontpage.scss */
 .gk-agenda-event-info h3 a:active,
 .gk-agenda-event-info h3 a:focus,
 .gk-agenda-event-info h3 a:hover {
   color: #61a9c2;
 }
-/* line 237, _frontpage.scss */
+/* line 242, _frontpage.scss */
 .gk-agenda-event-info > div > div {
   padding: 12px 22px 0 22px;
 }
-/* line 240, _frontpage.scss */
+/* line 245, _frontpage.scss */
 .gk-agenda-event-info small {
   color: #fff;
   font-size: 14px;
@@ -7839,19 +7844,19 @@ div#artists.frontpage-block a:hover {
 }
 
 /* PARTNERS */
-/* line 247, _frontpage.scss */
+/* line 252, _frontpage.scss */
 .partner_logos {
   margin: 2em auto 0;
   display: table;
 }
-/* line 250, _frontpage.scss */
+/* line 255, _frontpage.scss */
 .partner_logos img {
   /*max-width: 200px;
   margin: 0 20px;*/
   margin: 0 auto;
   display: block;
 }
-/* line 255, _frontpage.scss */
+/* line 260, _frontpage.scss */
 .partner_logos img:hover {
   opacity: .9;
 }
@@ -8069,5 +8074,26 @@ article.event-page .entry-social-sharing > div:first-of-type {
   #gk-header-nav.static #gk-logo {
     top: 0px;
     transform: scale(0.8);
+  }
+
+  /* line 90, _mobile.scss */
+  #gk-header-mod {
+    /*the mobile view of the first screen */
+    background-attachment: scroll;
+    background-position: center top;
+  }
+
+  /* line 95, _mobile.scss */
+  .frontpage-block {
+    background: url("images/frontpage_bg_mobile.jpg") repeat center center;
+    /*different bg for mobile*/
+    background-size: inherit;
+    background-attachment: fixed;
+  }
+
+  /* line 100, _mobile.scss */
+  #gk-footer {
+    background-repeat: repeat;
+    background-size: initial;
   }
 }

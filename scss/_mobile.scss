@@ -86,4 +86,19 @@
 		top: 0px;
 		transform: scale(.8);
 	}
+
+	#gk-header-mod { /*the mobile view of the first screen */
+		background-attachment: scroll;
+		background-position: center top;
+	}
+
+	.frontpage-block {
+		background: url("images/frontpage_bg_mobile.jpg") repeat center center; /*different bg for mobile*/
+		background-size: inherit;
+		background-attachment: fixed;
+	}
+	#gk-footer {
+		background-repeat: repeat;
+		background-size: initial;
+	}
 }

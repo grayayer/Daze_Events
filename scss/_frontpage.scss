@@ -1,10 +1,15 @@
 body.home {
 
+	#gk-header-nav {
+		opacity: 0;
+	}
+
 	#gk-header-nav.active {
 		top: 32px;
 		top: inherit; /*this addresses a bug on windows, but also prevents the super smooth fade in*/
 		border-bottom: rgba(0,0,0,.25) solid 10px;
 		height: 84px;
+		opacity: 1;
 	}
 	h3.frontpage_block_title {
 		color: $pale_yellow !important;
