@@ -3,11 +3,11 @@
 	body.home {
 		#gk-header-nav.active {
 			top: 0;
-			height: 64px;
+			height: 54px;
 
 			#gk-logo, #gk-logo-css, #gk-logo-css-big {
 				top: 0;
-				height: 50px;
+				max-height: 48px;
 				line-height: 50px;
 
 				img {

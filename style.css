@@ -7972,12 +7972,12 @@ article.event-page .entry-social-sharing > div:first-of-type {
   /* line 4, _mobile.scss */
   body.home #gk-header-nav.active {
     top: 0;
-    height: 64px;
+    height: 54px;
   }
   /* line 8, _mobile.scss */
   body.home #gk-header-nav.active #gk-logo, body.home #gk-header-nav.active #gk-logo-css, body.home #gk-header-nav.active #gk-logo-css-big {
     top: 0;
-    height: 50px;
+    max-height: 48px;
     line-height: 50px;
   }
   /* line 13, _mobile.scss */
