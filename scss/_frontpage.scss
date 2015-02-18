@@ -2,6 +2,7 @@ body.home {
 
 	#gk-header-nav.active {
 		top: 32px;
+		top: inherit; /*this addresses a bug on windows, but also prevents the super smooth fade in*/
 		border-bottom: rgba(0,0,0,.25) solid 10px;
 		height: 84px;
 	}

@@ -7602,20 +7602,22 @@ select {
 /* line 3, _frontpage.scss */
 body.home #gk-header-nav.active {
   top: 32px;
+  top: inherit;
+  /*this addresses a bug on windows, but also prevents the super smooth fade in*/
   border-bottom: rgba(0, 0, 0, 0.25) solid 10px;
   height: 84px;
 }
-/* line 8, _frontpage.scss */
+/* line 9, _frontpage.scss */
 body.home h3.frontpage_block_title {
   color: #faf5a6 !important;
   text-shadow: 2px 2px 1px #111;
 }
-/* line 13, _frontpage.scss */
+/* line 14, _frontpage.scss */
 body.home .gk-subtitle {
   color: #FFF;
 }
 
-/* line 19, _frontpage.scss */
+/* line 20, _frontpage.scss */
 .frontpage-block {
   background: url("images/bg_texture2.jpg") no-repeat center center;
   background-size: cover;
@@ -7635,42 +7637,42 @@ body.home .gk-subtitle {
   	}*/
   /****** ############### REMOVE AFTER DEBUGGGING ############*/
 }
-/* line 25, _frontpage.scss */
+/* line 26, _frontpage.scss */
 .frontpage-block a {
   color: #faf5a6;
   text-shadow: 2px 2px 1px #111;
 }
-/* line 45, _frontpage.scss */
+/* line 46, _frontpage.scss */
 .frontpage-block b {
   color: red;
 }
 
-/* line 51, _frontpage.scss */
+/* line 52, _frontpage.scss */
 #gk-header-mod {
   background-size: cover;
   border-bottom: solid rgba(0, 0, 0, 0.5) 20px;
 }
-/* line 55, _frontpage.scss */
+/* line 56, _frontpage.scss */
 #gk-header-mod .homescreen_logo img {
   margin-top: -210px;
   position: relative;
   top: -161px;
 }
-/* line 61, _frontpage.scss */
+/* line 62, _frontpage.scss */
 #gk-header-mod .homescreen_artists {
   max-width: 530px;
 }
-/* line 65, _frontpage.scss */
+/* line 66, _frontpage.scss */
 #gk-header-mod h1, #gk-header-mod h2, #gk-header-mod p.gk-desc {
   color: #faf5a6 !important;
   text-shadow: 2px 2px 1px #111;
 }
-/* line 70, _frontpage.scss */
+/* line 71, _frontpage.scss */
 #gk-header-mod h1 {
   font-size: 40px;
   margin-bottom: 12px !important;
 }
-/* line 75, _frontpage.scss */
+/* line 76, _frontpage.scss */
 #gk-header-mod h2 {
   font-size: 31px;
   text-transform: uppercase;
@@ -7678,42 +7680,42 @@ body.home .gk-subtitle {
 }
 
 @media only screen and (min-width: 1024px) {
-  /* line 84, _frontpage.scss */
+  /* line 85, _frontpage.scss */
   #gk-header-mod .homescreen_artists {
     max-width: 40.5vw;
   }
 }
 @media only screen and (max-width: 599px) {
-  /* line 92, _frontpage.scss */
+  /* line 93, _frontpage.scss */
   #gk-header-mod .homescreen_artists {
     max-width: 100%;
   }
 }
-/* line 99, _frontpage.scss */
+/* line 100, _frontpage.scss */
 h3.frontpage_block_title {
   font-weight: 800;
 }
 
 /******** NEWS **********/
-/* line 106, _frontpage.scss */
+/* line 107, _frontpage.scss */
 .homepage_news h3.gk-nsp-header a {
   color: #faf5a6;
 }
-/* line 108, _frontpage.scss */
+/* line 109, _frontpage.scss */
 .homepage_news h3.gk-nsp-header a:hover {
   color: #b2e1f1;
 }
-/* line 112, _frontpage.scss */
+/* line 113, _frontpage.scss */
 .homepage_news .gk-nsp-info, .homepage_news .gk-nsp-text {
   color: #FFF;
 }
-/* line 115, _frontpage.scss */
+/* line 116, _frontpage.scss */
 .homepage_news a.readon.btn {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 /***** VENUES SECTION ***/
-/* line 123, _frontpage.scss */
+/* line 124, _frontpage.scss */
 div#venues.frontpage-block img {
   max-height: 100px;
   width: auto;
@@ -7756,80 +7758,80 @@ div#venues.frontpage-block img {
 }
 */
 /*** SPEAKERS/artists SECTION ***/
-/* line 169, _frontpage.scss */
+/* line 170, _frontpage.scss */
 .gk-speakers h3 {
   font-size: 32px;
   line-height: 1.2;
   font-family: 'interstate condensed';
   font-weight: 800;
 }
-/* line 174, _frontpage.scss */
+/* line 175, _frontpage.scss */
 .gk-speakers h3 small {
   font-family: Ubuntu, arial, helvetica, sans-serif;
   font-weight: 400;
   font-weight: normal;
   color: #FFF;
 }
-/* line 181, _frontpage.scss */
+/* line 182, _frontpage.scss */
 .gk-speakers a:hover:after {
   text-shadow: none;
 }
-/* line 184, _frontpage.scss */
+/* line 185, _frontpage.scss */
 .gk-speakers figure > a {
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-/* line 190, _frontpage.scss */
+/* line 191, _frontpage.scss */
 .gk-speakers img, .speakers-listing .entry-thumbnail img {
   border: solid rgba(250, 245, 166, 0.25) 4px;
 }
 
-/* line 194, _frontpage.scss */
+/* line 195, _frontpage.scss */
 .gk-speakers > figure > a, .speakers-listing .entry-thumbnail a {
   margin: 0 auto 10px auto;
 }
 
-/* line 200, _frontpage.scss */
+/* line 201, _frontpage.scss */
 div#artists.frontpage-block {
   /*	background: url('images/bg_texture2.jpg') no-repeat center center;
   	background-size: cover;
   	background-attachment: fixed;*/
 }
-/* line 205, _frontpage.scss */
+/* line 206, _frontpage.scss */
 div#artists.frontpage-block a {
   color: #faf5a6;
   text-shadow: 2px 2px 1px #111;
 }
-/* line 208, _frontpage.scss */
+/* line 209, _frontpage.scss */
 div#artists.frontpage-block a:hover {
   color: #b2e1f1;
 }
 
-/* line 214, _frontpage.scss */
+/* line 215, _frontpage.scss */
 .gk-speakers > figure > a:after, .speakers-listing .entry-thumbnail a:after {
   content: "\f00e";
   font-family: 'FontAwesome';
 }
 
 /***** SHOWS SECTION *******/
-/* line 222, _frontpage.scss */
+/* line 223, _frontpage.scss */
 .gk-agenda-event-info h3 {
   font-size: 20px;
   font-family: 'interstate', 'interstate condensed';
   font-weight: 100;
   margin-bottom: 8px;
 }
-/* line 228, _frontpage.scss */
+/* line 229, _frontpage.scss */
 .gk-agenda-event-info h3 a:active,
 .gk-agenda-event-info h3 a:focus,
 .gk-agenda-event-info h3 a:hover {
   color: #61a9c2;
 }
-/* line 236, _frontpage.scss */
+/* line 237, _frontpage.scss */
 .gk-agenda-event-info > div > div {
   padding: 12px 22px 0 22px;
 }
-/* line 239, _frontpage.scss */
+/* line 240, _frontpage.scss */
 .gk-agenda-event-info small {
   color: #fff;
   font-size: 14px;
@@ -7837,19 +7839,19 @@ div#artists.frontpage-block a:hover {
 }
 
 /* PARTNERS */
-/* line 246, _frontpage.scss */
+/* line 247, _frontpage.scss */
 .partner_logos {
   margin: 2em auto 0;
   display: table;
 }
-/* line 249, _frontpage.scss */
+/* line 250, _frontpage.scss */
 .partner_logos img {
   /*max-width: 200px;
   margin: 0 20px;*/
   margin: 0 auto;
   display: block;
 }
-/* line 254, _frontpage.scss */
+/* line 255, _frontpage.scss */
 .partner_logos img:hover {
   opacity: .9;
 }
