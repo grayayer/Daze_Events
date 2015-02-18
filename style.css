@@ -7832,10 +7832,12 @@ div#artists.frontpage-block a:hover {
 }
 /* line 235, _frontpage.scss */
 .partner_logos img {
-  max-width: 200px;
-  margin: 0 20px;
+  /*max-width: 200px;
+  margin: 0 20px;*/
+  margin: 0 auto;
+  display: block;
 }
-/* line 238, _frontpage.scss */
+/* line 240, _frontpage.scss */
 .partner_logos img:hover {
   opacity: .9;
 }

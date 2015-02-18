@@ -233,8 +233,10 @@ div#artists.frontpage-block {
 	margin: 2em auto 0;
 	display: table;
 	img {
-		max-width: 200px;
-		margin: 0 20px;
+		/*max-width: 200px;
+		margin: 0 20px;*/
+		margin: 0 auto;
+		display: block;		
 		&:hover {
 			opacity:.9;
 		}
