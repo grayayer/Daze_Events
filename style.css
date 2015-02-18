@@ -5242,30 +5242,35 @@ body #key {
 /*COLORS */
 /*** GRAY'S CUSTOM ADDITIONS ***/
 /* line 5, _child.scss */
+#gk-bg {
+  background: white url("images/paper.png") repeat fixed;
+}
+
+/* line 9, _child.scss */
 .homepage_news h3.gk-nsp-header {
   font-size: 25px;
   padding-bottom: 10px;
   text-align: left;
 }
 
-/* line 11, _child.scss */
+/* line 15, _child.scss */
 .gk-nsp-art.gk-nsp-cols-3 {
   padding-left: 20px !important;
   box-sizing: border-box;
 }
 
-/* line 16, _child.scss */
+/* line 20, _child.scss */
 .gk-nsp-art.gk-nsp-cols-3:first-child {
   padding-left: 0 !important;
 }
 
-/* line 21, _child.scss */
+/* line 25, _child.scss */
 .homepage_news .gk-nsp-info a {
   display: none;
 }
 
 /* Event & ARTIST SIDEBAR STYLING**/
-/* line 29, _child.scss */
+/* line 33, _child.scss */
 .artist_sidebar {
   border: 1px solid #999;
   padding: 10px 15px;
@@ -5273,7 +5278,7 @@ body #key {
   background: #ccc;
 }
 
-/* line 36, _child.scss */
+/* line 40, _child.scss */
 .artist_sidebar a {
   color: #fff;
 }
@@ -5281,12 +5286,12 @@ body #key {
 /*.artist_sidebar h3 {
 	padding-top: 2em;
 }*/
-/* line 44, _child.scss */
+/* line 48, _child.scss */
 .extra-fields dt {
   clear: both;
 }
 
-/* line 48, _child.scss */
+/* line 52, _child.scss */
 .extra-fields dd button {
   margin-bottom: 1rem;
 }
