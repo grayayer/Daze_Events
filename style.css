@@ -8047,28 +8047,23 @@ article.event-page .entry-social-sharing > div:first-of-type {
   #gk-header-nav {
     /*interior navigation header*/
   }
-  /* line 67, _mobile.scss */
-  #gk-header-nav #gk-logo {
-    top: 0;
-    transform: scale(0.5);
-    height: 53px;
-  }
-  /* line 73, _mobile.scss */
-  #gk-header-nav.active #gk-logo, #gk-header-nav.static #gk-logo, #gk-header-nav.static.active #gk-logo {
+  /* line 68, _mobile.scss */
+  #gk-header-nav #gk-logo, #gk-header-nav.active #gk-logo, #gk-header-nav.static #gk-logo, #gk-header-nav.static.active #gk-logo {
     max-height: 40px;
     width: 125px;
     left: 0;
     margin-left: 0;
+    top: 0;
   }
 
-  /* line 81, _mobile.scss */
+  /* line 77, _mobile.scss */
   #gk-footer {
     background-repeat: repeat;
     background-size: initial;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1025px) {
-  /* line 89, _mobile.scss */
+  /* line 85, _mobile.scss */
   #gk-header-nav.static #gk-logo {
     top: 0px;
     transform: scale(0.8);
