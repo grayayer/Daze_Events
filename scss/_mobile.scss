@@ -1,4 +1,21 @@
 @media only screen and (max-width: 640px) {
+
+body.home #gk-header-nav.active {
+	top: 0;
+	height: 64px;
+
+	#gk-logo, #gk-logo-css, #gk-logo-css-big {
+		top: 0;
+		height: 50px;
+		line-height: 50px;
+			img {
+				height: 50px;
+				width: initial;
+			}
+	}
+
+}
+
 	.entry-social-sharing {
 		display: none !important;
 	}
@@ -17,7 +34,7 @@
 	#gk-header-mod { /*the mobile view of the first screen */
 		background-attachment: scroll;
 		background-position: center top;
-		
+
 		h1 {
 			font-size: 26px;
 			margin: 10px 0 !important;
