@@ -8044,7 +8044,7 @@ article.event-page .entry-social-sharing > div:first-of-type {
   }
 
   /* line 67, _mobile.scss */
-  #gk-header-nav #gk-logo, #gk-header-nav .active #gk-logo, #gk-header-nav .static #gk-logo, #gk-header-nav .static.active #gk-logo {
+  #gk-header-nav #gk-logo, #gk-header-nav.active #gk-logo, #gk-header-nav.static #gk-logo, #gk-header-nav.static.active #gk-logo {
     top: 0;
     transform: scale(0.5);
     height: 53px;
