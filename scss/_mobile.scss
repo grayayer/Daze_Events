@@ -14,6 +14,16 @@
 		}
 	}
 
+	#gk-header-mod { /*the mobile view of the first screen */
+		background-attachment: scroll;
+		background-position: center top;
+		
+		h1 {
+			font-size: 26px;
+			margin: 10px 0 !important;
+		}
+	}
+
 	.frontpage-block {
 		background: url("images/frontpage_bg_mobile.jpg") repeat center center; /*different bg for mobile*/
 		background-size: inherit;

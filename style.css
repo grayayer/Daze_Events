@@ -7976,6 +7976,18 @@ article.event-page .entry-social-sharing > div:first-of-type {
   }
 
   /* line 17, _mobile.scss */
+  #gk-header-mod {
+    /*the mobile view of the first screen */
+    background-attachment: scroll;
+    background-position: center top;
+  }
+  /* line 21, _mobile.scss */
+  #gk-header-mod h1 {
+    font-size: 26px;
+    margin: 10px 0 !important;
+  }
+
+  /* line 27, _mobile.scss */
   .frontpage-block {
     background: url("images/frontpage_bg_mobile.jpg") repeat center center;
     /*different bg for mobile*/
@@ -7983,7 +7995,7 @@ article.event-page .entry-social-sharing > div:first-of-type {
     background-attachment: fixed;
   }
 
-  /* line 23, _mobile.scss */
+  /* line 33, _mobile.scss */
   .speaker-page .entry-meta,
   .sponsor-page .entry-meta,
   .listing-item .entry-meta {
@@ -7991,7 +8003,7 @@ article.event-page .entry-social-sharing > div:first-of-type {
     width: 100%;
   }
 
-  /* line 30, _mobile.scss */
+  /* line 40, _mobile.scss */
   #gk-header-nav.static.active #gk-logo {
     top: 0;
     transform: scale(0.5);
@@ -7999,7 +8011,7 @@ article.event-page .entry-social-sharing > div:first-of-type {
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 1025px) {
-  /* line 38, _mobile.scss */
+  /* line 48, _mobile.scss */
   #gk-header-nav.static #gk-logo {
     top: 0px;
     transform: scale(0.8);
