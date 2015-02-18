@@ -5477,19 +5477,25 @@ div#artists.frontpage-block a:hover {
   color: #b2e1f1;
 }
 
+/* line 182, _frontpage.scss */
+.gk-speakers > figure > a:after, .speakers-listing .entry-thumbnail a:after {
+  content: "\f00e";
+  font-family: 'FontAwesome';
+}
+
 /***** SHOWS SECTION *******/
-/* line 185, _frontpage.scss */
+/* line 190, _frontpage.scss */
 .gk-agenda-event-info h3 {
   font-size: 20px;
   font-family: 'interstate', 'interstate condensed';
   font-weight: 100;
   margin-bottom: 8px;
 }
-/* line 191, _frontpage.scss */
+/* line 196, _frontpage.scss */
 .gk-agenda-event-info > div > div {
   padding: 12px 22px 0 22px;
 }
-/* line 194, _frontpage.scss */
+/* line 199, _frontpage.scss */
 .gk-agenda-event-info small {
   color: #fff;
   font-size: 14px;
@@ -5497,17 +5503,17 @@ div#artists.frontpage-block a:hover {
 }
 
 /* PARTNERS */
-/* line 201, _frontpage.scss */
+/* line 206, _frontpage.scss */
 .partner_logos {
   margin: 2em auto 0;
   display: table;
 }
-/* line 204, _frontpage.scss */
+/* line 209, _frontpage.scss */
 .partner_logos img {
   max-width: 200px;
   margin: 0 20px;
 }
-/* line 207, _frontpage.scss */
+/* line 212, _frontpage.scss */
 .partner_logos img:hover {
   opacity: .9;
 }

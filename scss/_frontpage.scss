@@ -179,6 +179,11 @@ div#artists.frontpage-block {
 	}
 }
 
+.gk-speakers > figure > a:after, .speakers-listing .entry-thumbnail a:after {
+	content: "\f00e";
+	font-family: 'FontAwesome';
+}
+
 /***** SHOWS SECTION *******/
 
 .gk-agenda-event-info {
