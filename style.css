@@ -7627,7 +7627,7 @@ body.home .gk-subtitle {
   background: url("images/bg_texture2.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
-  padding: 4em 0 !important;
+  padding: 8em 0 0 !important;
   /*	&:after {
   		content: "\f006 \0020 \f006 \0020 \f006";
   		font-family: 'FontAwesome';
