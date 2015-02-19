@@ -7897,8 +7897,18 @@ body h2.entry-title small {
   font-size: 1.5rem;
   font-weight: normal;
 }
+/* line 38, _typography.scss */
+body .entry-content ul li, body .entry-summary ul li {
+  margin-bottom: 10px;
+}
+/* line 42, _typography.scss */
+body button .centered, body a .centered {
+  text-align: center;
+  margin: 0 auto;
+  display: table;
+}
 
-/* line 40, _typography.scss */
+/* line 50, _typography.scss */
 [class^="fa-"]:before,
 [class*=" fa-"]:before {
   font-family: "FontAwesome" !important;

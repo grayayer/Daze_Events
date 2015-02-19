@@ -35,6 +35,16 @@ body {
 		}
 	}
 
+	.entry-content ul li, .entry-summary ul li {
+		margin-bottom: 10px;
+	}
+	button, a {
+		.centered {
+			text-align: center;
+			margin: 0 auto;
+			display: table;
+		}
+	}
 }
 
 [class^="fa-"]:before,
