@@ -390,7 +390,7 @@ jQuery(document).ready(function($) {
 /** END SMOOTH SCROLLING FUNCTIONALITY **/
 
 
-//GOOGLE ANALYTICS
+/*GOOGLE ANALYTICS this is now run through the google analyticator plugin for event tracking of "buy now buttons" and to not log logged in users
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -398,3 +398,4 @@ jQuery(document).ready(function($) {
 
   ga('create', 'UA-59554937-1', 'auto');
   ga('send', 'pageview');
+*/
