@@ -99,6 +99,8 @@ get_header(); ?>
 						</div><!-- .entry-content -->
 						
 						<footer class="entry-meta">
+							<!-- EVENT META DATA -->
+							<div class="artist_sidebar event">							
 							<?php
 								// get the post custom fields
 								if ($keys = get_post_custom_keys()) {
@@ -139,6 +141,7 @@ get_header(); ?>
 							?>
 							
 							<?php edit_post_link( __( 'Edit', 'events' ), '<span class="edit-link">', '</span>' ); ?>
+							</div>
 						</footer><!-- .entry-meta -->
 					</div>
 				</article><!-- #post -->

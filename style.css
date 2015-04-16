@@ -8052,7 +8052,8 @@ article.event-page .entry-social-sharing > div:first-of-type {
     font-size: 3em;
   }
 
-  /* line 59, _mobile.scss */
+  /* line 58, _mobile.scss */
+  .page-template-template-event .entry-meta,
   .speaker-page .entry-meta,
   .sponsor-page .entry-meta,
   .listing-item .entry-meta {
