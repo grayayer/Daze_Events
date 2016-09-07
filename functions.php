@@ -159,11 +159,10 @@ function events_scripts() {
 	// Loads JavaScript file for responsive video.
 	wp_enqueue_script('events-video',  get_template_directory_uri() . '/js/jquery.fitvids.js', false, false, true);
 	
-	/* Loads JavaScript file for the scroll reveal
+	// Loads JavaScript file for the scroll reveal
 	if(get_theme_mod('events_scroll_reveal', '1') == '1') {
 		wp_enqueue_script('events-scroll-reveal',  get_template_directory_uri() . '/js/scrollreveal.js', false, false, true);
-		
-	}*/
+	}
 }
 
 add_action( 'wp_enqueue_scripts', 'events_scripts' );

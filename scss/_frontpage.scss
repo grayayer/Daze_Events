@@ -1,4 +1,11 @@
-body.home {
+body.home.frontpage {
+	background:$purple url('images/faded_bg_homepage.jpg') no-repeat top center !important;
+	background-size: cover;
+	background-attachment: fixed;
+
+	img.frontpage_logo {
+		padding-top: 6em;
+	}
 
 	#gk-header-nav {
 		opacity: 0;
@@ -12,8 +19,8 @@ body.home {
 		opacity: 1;
 	}
 	h3.frontpage_block_title {
-		color: $pale_yellow !important;
-		text-shadow: 2px 2px 1px #111;
+		color: $header_color !important;
+		text-shadow: 1px 2px 3px darken($header_color, 50%);
 	}
 
 	.gk-subtitle {
@@ -23,14 +30,14 @@ body.home {
 
 
 .frontpage-block {
-	background: url('images/bg_texture2.jpg') no-repeat center center;
-	background-size: cover;
-	background-attachment: fixed;
-	padding: 8em 0 0 !important;
-	
+	padding: 6em 0 0 !important;
+	&#shows {
+		margin-bottom: 6em;
+	}
+
 	a {
-		color: $pale_yellow;
-		text-shadow: 2px 2px 1px #111;
+		color: $header_color;
+		text-shadow: 1px 2px 3px darken($header_color, 50%);
 	}
 
 /*	&:after {
@@ -56,7 +63,7 @@ body.home {
 
 #gk-header-mod {
 	background-size: cover;
-	border-bottom: solid rgba(0,0,0,0.5) 20px;
+/*	border-bottom: solid rgba(0,0,0,0.5) 20px; */
 
 	.homescreen_logo img {
 		margin-top: -210px;
@@ -69,7 +76,7 @@ body.home {
 	}
 
 	h1, h2, p.gk-desc {
-		color: $pale_yellow !important;
+		color: $header_color !important;
 		text-shadow: 2px 2px 1px #111;
 		}
 
@@ -110,7 +117,7 @@ h3.frontpage_block_title {
 
 .homepage_news {
 	h3.gk-nsp-header a {
-		color: $pale_yellow;
+		color: $header_color;
 		&:hover {
 			color: $anchor_hover;
 		}		
@@ -209,8 +216,8 @@ div#artists.frontpage-block {
 	background-attachment: fixed;*/
 
 	a {
-		color: $pale_yellow;
-		text-shadow: 2px 2px 1px #111;
+		color: $header_color;
+		text-shadow: 1px 2px 3px darken($header_color, 50%);
 		&:hover {
 			color:$anchor_hover;
 		}
@@ -224,6 +231,10 @@ div#artists.frontpage-block {
 
 /***** SHOWS SECTION *******/
 
+
+#show {
+	padding-bottom: 6em;
+}
 .gk-agenda-event-info {
 	h3 {
 		font-size: 20px;

@@ -2,8 +2,18 @@
 
  /*** GRAY'S CUSTOM ADDITIONS ***/
 
+body {
+	background:#000 url('images/faded_interior_bg_bw.jpg') no-repeat top center;
+	color: #FFF;
+}
+
 #gk-bg {
-	background: #FFF url('images/paper.png') repeat fixed;
+	background: transparent;
+}
+
+#gk-header-nav #gk-logo.gk-small-logo,
+#gk-header-nav #gk-logo {
+  width: 480px;
 }
 
 .homepage_news h3.gk-nsp-header {
@@ -31,17 +41,17 @@
 
 
 .artist_sidebar {
-	border: 1px solid rgba(0,0,0,.06);
+	border: 4px solid rgba(0, 0, 0, 0.2);
 	padding: 15px 20px;
 	margin-bottom: 1rem;
-	background: rgba(0,0,0,.04);
+	background: rgba(0,0,0,.3);
 }
 
 .artist_sidebar a {
-	color: #4491AC;
-	&:hover {
+	color: $link_color;
+/*	&:hover {
 		color: $purple;
-	}
+	}*/
 }
 
 /*.artist_sidebar h3 {

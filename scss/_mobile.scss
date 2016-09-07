@@ -1,17 +1,30 @@
+/*gray's personal responsive rules*/
 @media only screen and (max-width: 640px) {
 
-	body.home {
+	body #gk-header-nav.static #gk-logo,
+	body #gk-header-nav.static.active #gk-logo {
+	    max-height: 40px;
+	    width: 240px;
+	    margin-left: 10px;
+	}
+
+	body.home.frontpage {
+
 		#gk-header-nav.active {
 			top: 0;
 			height: 54px;
+	    	top: inherit;
+    		border-bottom: rgba(0, 0, 0, 0.25) solid 5px;			
+
 
 			#gk-logo, #gk-logo-css, #gk-logo-css-big {
-				top: 0;
-				max-height: 48px;
-				line-height: 50px;
+				top: -5px;
+				max-height: 54px;
+			    width: 280px;
+			    margin-left: 0;				
 
 				img {
-					height: 50px;
+					height: auto;
 					width: initial;
 				}
 			}
@@ -47,11 +60,11 @@
 	}
 
 	.frontpage-block {
-		background: url("images/frontpage_bg_mobile.jpg") repeat center center; /*different bg for mobile*/
+/*		background: url("images/frontpage_bg_mobile.jpg") repeat center center; different bg for mobile
 		background-size: inherit;
 		background-attachment: fixed;
 		padding: 3em 0 !important;
-		h3.frontpage_block_title {
+*/		h3.frontpage_block_title {
 			font-size: 3em;
 		}
 	}

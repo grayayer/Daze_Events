@@ -1,11 +1,25 @@
 body {
-
-	a {
-		color: darken(saturate($primary, 40%), 20%);
+	label {
+		color: $body_color;
 	}
 
-	a.readon.btn, button, .readon, input[type="submit"], input[type="button"], input[type="reset"] {
-		border-bottom: 4px solid darken($primary, 20%);
+	a {
+		color: $link_color;
+		&:hover {
+			color: lighten($link_color, 20%);
+		}
+	}
+
+	a.readon.btn,
+	button,
+	.readon,
+	input[type="submit"],
+	input[type="button"],
+	input[type="reset"] {
+		border: 1px solid darken($button_color, 20%);
+		border-bottom: 4px solid darken($button_color, 8%);
+		background: $button_color;
+
 	}
 
 	a.readon.btn:hover {
@@ -38,6 +52,7 @@ body {
 	.entry-content ul li, .entry-summary ul li {
 		margin-bottom: 10px;
 	}
+
 	button, a {
 		.centered {
 			text-align: center;
@@ -45,17 +60,44 @@ body {
 			display: table;
 		}
 	}
-}
 
-[class^="fa-"]:before,
-[class*=" fa-"]:before {
-	font-family: "FontAwesome" !important;
-	font-style: normal !important;
-	font-weight: normal !important;
-	font-variant: normal !important;
-	text-transform: none !important;
-	speak: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	.extra-fields dt {
+		color: $primary;
+		text-shadow: 1px 1px 0 darken($header_color, 50%);		
+	}
+
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	a.inverse {
+		color: $header_color;
+		text-shadow: 1px 1px 0 darken($header_color, 50%);
+	}
+
+	a.inverse {
+		&:hover {
+			color: $header_color;
+		}
+		small {
+			color: lighten($header_color, 15%);
+			text-shadow: 1px 1px 0 darken(lighten($header_color, 15%), 50%);			
+		}
+	}
+
+	[class^="fa-"]:before,
+	[class*=" fa-"]:before {
+		font-family: "FontAwesome" !important;
+		font-style: normal !important;
+		font-weight: normal !important;
+		font-variant: normal !important;
+		text-transform: none !important;
+		speak: none;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
 }
