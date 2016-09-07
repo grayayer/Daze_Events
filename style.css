@@ -128,10 +128,6 @@ body {
   word-wrap: break-word;
 }
 
-body.frontpage {
-  background-image: none !important;
-}
-
 a,
 .inverse,
 .inverse:active,
@@ -6505,7 +6501,8 @@ select {
 
 /*** GRAY'S CUSTOM ADDITIONS ***/
 body {
-  background: black url("images/faded_interior_bg_bw.jpg") no-repeat top center;
+  background: url("images/faded_interior_bg_bw.jpg") no-repeat top center;
+  background-color: #000;
   color: #FFF;
 }
 
@@ -6564,7 +6561,7 @@ body {
 }
 
 body.home.frontpage {
-  background: #051646 url("images/faded_bg_homepage.jpg") no-repeat top center !important;
+  /*	background:$purple url('images/faded_bg_homepage.jpg') no-repeat top center !important;*/
   background-size: cover;
   background-attachment: fixed;
 }
