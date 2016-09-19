@@ -105,11 +105,13 @@
 		background-position: center top;
 	}
 
+/* different bg for mobile
 	.frontpage-block {
-		background: url("images/frontpage_bg_mobile.jpg") repeat center center; /*different bg for mobile*/
+		background: url("images/frontpage_bg_mobile.jpg") repeat center center; 
 		background-size: inherit;
 		background-attachment: fixed;
 	}
+*/	
 	#gk-footer {
 		background-repeat: repeat;
 		background-size: initial;
