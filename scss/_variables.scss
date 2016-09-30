@@ -1,8 +1,10 @@
 
+$orange: #da6319;
+$red: #ff0000;
 $header_font: 'interstate condensed';
 $nav_color:#FFFFFF;
 $body_color: #FFF;
-$primary: #DA6319;
+$primary: $orange;
 $primary_darker: darken($primary, 15%);
 $header_color: $primary;
 $link_color: #E8C44E;

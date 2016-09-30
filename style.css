@@ -6454,7 +6454,7 @@ select {
 }
 #gk-header-nav.active {
   /*background: rgba(5,22,70,.3);*/
-  background: url("images/header_texture_bw.jpg") repeat black;
+  background: url("images/header_texture_bw_2016.jpg") repeat black;
 }
 #gk-header-nav #gk-logo.gk-small-logo, #gk-header-nav #gk-logo {
   height: 70px;
@@ -6501,7 +6501,7 @@ select {
 
 /*** GRAY'S CUSTOM ADDITIONS ***/
 body {
-  background: url("images/faded_interior_bg_bw.jpg") no-repeat top center;
+  background: url("images/daze_interiorpage_color_faded_bg_2016.jpg") no-repeat top center;
   background-color: #000;
   color: #FFF;
 }
@@ -6561,7 +6561,7 @@ body {
 }
 
 body.home.frontpage {
-  background: black url("images/faded_homepage_bg_bw_2016.jpg") no-repeat top center !important;
+  background: black url("images/daze_homepage_color_faded_bg.jpg") no-repeat top center !important;
   background-size: cover;
   background-attachment: fixed;
 }
