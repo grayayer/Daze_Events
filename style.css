@@ -6506,6 +6506,12 @@ body {
   color: #FFF;
 }
 
+body.page-id-1669 {
+  background-image: none;
+  background-color: #000;
+  color: #FFF;
+}
+
 #gk-bg {
   background: transparent;
 }
