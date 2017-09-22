@@ -5,7 +5,7 @@ Theme URI: http://www.gavick.com
 Description: Build attractive festival, gathering and conference websites with this event WordPress theme. Extensive theme options all configurable and previewed in the Theme Customizer and event-specific features like event pages, schedules and Eventbrite integration provide the full package for event organizers to reach out to their audience and drive up participation for a one-of-a-kind experience.
 License: GNU GPL v.2.0
 License URI: LICENSE.txt
-Version: 1.1.12
+Version: 1.1.12-2017
 Author: GavickPro
 Author URI: http://www.gavick.com
 Tags: red, blue, white, two-columns, fluid-layout, responsive-layout, custom-background, custom-colors, custom-menu, editor-style, featured-images, post-formats, sticky-post, threaded-comments, translation-ready
@@ -6485,14 +6485,14 @@ select {
   color: white;
 }
 #gk-header-nav .nav-menu li a:hover {
-  color: #da6319;
+  color: red;
 }
 
 .home #gk-header-nav .nav-menu .current-menu-item a {
   color: white;
 }
 .home #gk-header-nav .nav-menu .current-menu-item a:hover {
-  color: #da6319;
+  color: red;
 }
 
 #aside-menu-toggler {
@@ -6567,7 +6567,7 @@ body.page-id-1669 {
 }
 
 body.home.frontpage {
-  background: black url("images/daze_homepage_color_faded_bg.jpg") no-repeat top center !important;
+  background: black url("images/daze_homepage_2017_color_faded_bg.jpg") no-repeat top center !important;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -6586,7 +6586,7 @@ body.home.frontpage #gk-header-nav.active {
   opacity: 1;
 }
 body.home.frontpage h3.frontpage_block_title {
-  color: #da6319 !important;
+  color: red !important;
   text-shadow: 1px 2px 3px black;
 }
 body.home.frontpage .gk-subtitle {
@@ -6613,7 +6613,7 @@ body.home.frontpage .gk-subtitle {
   margin-bottom: 6em;
 }
 .frontpage-block a {
-  color: #da6319;
+  color: red;
   text-shadow: 1px 2px 3px black;
 }
 .frontpage-block b {
@@ -6633,7 +6633,7 @@ body.home.frontpage .gk-subtitle {
   max-width: 530px;
 }
 #gk-header-mod h1, #gk-header-mod h2, #gk-header-mod p.gk-desc {
-  color: #da6319 !important;
+  color: red !important;
   text-shadow: 2px 2px 1px #111;
 }
 #gk-header-mod h1 {
@@ -6662,10 +6662,10 @@ h3.frontpage_block_title {
 
 /******** NEWS **********/
 .homepage_news h3.gk-nsp-header a {
-  color: #da6319;
+  color: red;
 }
 .homepage_news h3.gk-nsp-header a:hover {
-  color: #ffa973;
+  color: #ff8080;
 }
 .homepage_news .gk-nsp-info, .homepage_news .gk-nsp-text {
   color: #FFF;
@@ -6777,11 +6777,11 @@ div#artists.frontpage-block {
   	background-attachment: fixed;*/
 }
 div#artists.frontpage-block a {
-  color: #da6319;
+  color: red;
   text-shadow: 1px 2px 3px black;
 }
 div#artists.frontpage-block a:hover {
-  color: #ffa973;
+  color: #ff8080;
 }
 
 .gk-speakers > figure > a:after, .speakers-listing .entry-thumbnail a:after {
@@ -6803,7 +6803,7 @@ div#artists.frontpage-block a:hover {
 .gk-agenda-event-info h3 a:active,
 .gk-agenda-event-info h3 a:focus,
 .gk-agenda-event-info h3 a:hover {
-  color: #da6319;
+  color: red;
 }
 .gk-agenda-event-info > div > div {
   padding: 12px 22px 0 22px;
@@ -6879,7 +6879,7 @@ body button .centered, body a .centered {
   display: table;
 }
 body .extra-fields dt {
-  color: #da6319;
+  color: red;
   text-shadow: 1px 1px 0 black;
 }
 body h1,
@@ -6889,15 +6889,15 @@ body h4,
 body h5,
 body h6,
 body a.inverse {
-  color: #da6319;
+  color: red;
   text-shadow: 1px 1px 0 black;
 }
 body a.inverse:hover {
-  color: #da6319;
+  color: red;
 }
 body a.inverse small {
-  color: #eb8e54;
-  text-shadow: 1px 1px 0 #3a1a07;
+  color: #ff4d4d;
+  text-shadow: 1px 1px 0 #4d0000;
 }
 body [class^="fa-"]:before,
 body [class*=" fa-"]:before {
@@ -6942,7 +6942,7 @@ article.event-page .entry-social-sharing > div:first-of-type {
   color: #FFF;
 }
 #gk-footer a:hover {
-  color: #da6319 !important;
+  color: red !important;
 }
 #gk-footer div#gk-copyrights {
   margin: 0 auto;
@@ -6959,7 +6959,7 @@ article.event-page .entry-social-sharing > div:first-of-type {
   color: #FFF !important;
 }
 #gk-footer #gk-social li:hover {
-  color: #da6319 !important;
+  color: red !important;
 }
 
 /*gray's personal responsive rules*/
