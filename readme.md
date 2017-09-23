@@ -1,6 +1,6 @@
-*This is a modified version of a theme by Gavick Themes (https://www.gavick.com/wordpress-themes/events). As of Sept 2017, they've updated their main theme to 1.9, whereas this theme diverged around 1.1.12 so there may be incompatibilities. I've found their themes not to function consistently as parent themes with child themes for the projects, so I've unfortunately had to modify the original.
+*This is a modified version of a theme by Gavick Themes (https://www.gavick.com/wordpress-themes/events). As of Sept 2017, they've updated their main theme to 1.9, whereas this theme diverged around 1.1.12 so there may be incompatibilities. I've found their themes not to function consistently as parent themes with child themes for the projects, so I've unfortunately had to modify the original.*
 
-Here's some of the routine things that are changed for each new year. 
+**Here's some of the routine things that are changed for each new year.**
 
 # Background Images
 
