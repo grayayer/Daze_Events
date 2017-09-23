@@ -1,3 +1,5 @@
+# 9/22/17 WARNING - SOMETHING WITHIN THE REPOSITORY IS BREAKING THE SITE IF YOU PUSH THE ENTIRE REPO TO THE LIVE PRODUCTION SITE. The error resulting is *"Fatal error: Call to undefined function get_header() in /nas/content/staging/dazeof6dead/index.php on line 7"* So we have to do a painstaking diff of the live site and the repo before moving forward
+
 *This is a modified version of a theme by Gavick Themes (https://www.gavick.com/wordpress-themes/events). As of Sept 2017, they've updated their main theme to 1.9, whereas this theme diverged around 1.1.12 so there may be incompatibilities. I've found their themes not to function consistently as parent themes with child themes for the projects, so I've unfortunately had to modify the original.*
 
 **Here's some of the routine things that are changed for each new year.**
